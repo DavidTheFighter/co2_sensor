@@ -889,7 +889,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "MCU_ST_STM32L4:STM32L431KBUx"
+		(symbol "MCU_ST_STM32L4:STM32L432KBUx"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -906,7 +906,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "STM32L431KBUx"
+			(property "Value" "STM32L432KBUx"
 				(at 5.08 26.67 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -929,7 +929,7 @@
 					(justify right)
 				)
 			)
-			(property "Datasheet" "https://www.st.com/resource/en/datasheet/stm32l431kb.pdf"
+			(property "Datasheet" "https://www.st.com/resource/en/datasheet/stm32l432kb.pdf"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -951,7 +951,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "Arm Cortex-M4 STM32L4 STM32L4x1"
+			(property "ki_keywords" "Arm Cortex-M4 STM32L4 STM32L4x2"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -973,7 +973,7 @@
 					)
 				)
 			)
-			(symbol "STM32L431KBUx_0_1"
+			(symbol "STM32L432KBUx_0_1"
 				(rectangle
 					(start -10.16 -22.86)
 					(end 10.16 25.4)
@@ -986,7 +986,7 @@
 					)
 				)
 			)
-			(symbol "STM32L431KBUx_1_1"
+			(symbol "STM32L432KBUx_1_1"
 				(pin power_in line
 					(at -2.54 27.94 270)
 					(length 2.54)
@@ -1444,6 +1444,7 @@
 							)
 						)
 					)
+					(alternate "CRS_SYNC" bidirectional line)
 					(alternate "I2C1_SDA" bidirectional line)
 					(alternate "SAI1_SD_A" bidirectional line)
 					(alternate "TIM1_CH3" bidirectional line)
@@ -1474,6 +1475,7 @@
 					(alternate "TIM1_BKIN2_COMP1" bidirectional line)
 					(alternate "TIM1_CH4" bidirectional line)
 					(alternate "USART1_CTS" bidirectional line)
+					(alternate "USB_DM" bidirectional line)
 				)
 				(pin bidirectional line
 					(at 12.7 -10.16 180)
@@ -1497,6 +1499,7 @@
 					(alternate "TIM1_ETR" bidirectional line)
 					(alternate "USART1_DE" bidirectional line)
 					(alternate "USART1_RTS" bidirectional line)
+					(alternate "USB_DP" bidirectional line)
 				)
 				(pin bidirectional line
 					(at 12.7 -12.7 180)
@@ -1519,6 +1522,7 @@
 					(alternate "SAI1_SD_B" bidirectional line)
 					(alternate "SWPMI1_TX" bidirectional line)
 					(alternate "SYS_JTMS-SWDIO" bidirectional line)
+					(alternate "USB_NOE" bidirectional line)
 				)
 				(pin bidirectional line
 					(at 12.7 -15.24 180)
@@ -2171,7 +2175,7 @@
 		)
 		(uuid "99e0ee59-74f5-4be4-bc0c-ed6f0a889439")
 	)
-	(text "Sensor\nAddress"
+	(text "4-bit\nSensor\nAddress"
 		(exclude_from_sim no)
 		(at 88.138 94.996 0)
 		(effects
@@ -2194,13 +2198,13 @@
 		(uuid "10393502-5325-4964-a8b5-e1e199fc5e56")
 	)
 	(junction
-		(at 165.1 90.17)
+		(at 167.64 90.17)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "2054abc6-6396-4845-86bf-91d5a42e5d4f")
+		(uuid "2b1b8f28-1ea8-4e8c-85cb-926ac22dd84d")
 	)
 	(junction
-		(at 165.1 73.66)
+		(at 167.64 107.95)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "35d48494-76a9-4ad8-b6c7-f3fc49868e16")
@@ -2236,10 +2240,16 @@
 		(uuid "6cdb9e75-ddd9-4b95-beaf-e2799296446f")
 	)
 	(junction
-		(at 163.83 123.19)
+		(at 203.2 119.38)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6d187e39-4153-4c2c-a3b8-d6846d94a862")
+	)
+	(junction
+		(at 156.21 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "71c64118-8ca1-4eeb-90d8-1fcc1126cdf4")
 	)
 	(junction
 		(at 109.22 55.88)
@@ -2343,15 +2353,37 @@
 		(color 0 0 0 0)
 		(uuid "e2c4383d-f108-4ad7-8c83-96f1ed82bc17")
 	)
-	(junction
-		(at 153.67 87.63)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f2bb3fc4-60c7-4f11-9e04-6a2101ce7f40")
+	(no_connect
+		(at 113.03 97.79)
+		(uuid "05f74d4c-ed97-436f-a63b-ce0c4d196105")
+	)
+	(no_connect
+		(at 138.43 67.31)
+		(uuid "2278e6ad-0810-4075-a304-71b9cf1778bb")
+	)
+	(no_connect
+		(at 138.43 102.87)
+		(uuid "2c8c3ed2-64e2-4d53-ac4a-0b2ae44c4eea")
+	)
+	(no_connect
+		(at 138.43 74.93)
+		(uuid "3326856b-45e9-4e6c-9e2d-d6f636a88b2f")
+	)
+	(no_connect
+		(at 113.03 95.25)
+		(uuid "4e6003a6-bd3d-4896-bd78-37e305f841c9")
 	)
 	(no_connect
 		(at 113.03 77.47)
 		(uuid "5542dd4c-64a8-4e40-9a1d-2d86c3c3c401")
+	)
+	(no_connect
+		(at 113.03 92.71)
+		(uuid "6bbf2739-b11c-4729-9663-da237a66e3d9")
+	)
+	(no_connect
+		(at 138.43 77.47)
+		(uuid "86b88524-9c58-4377-a44f-67c5a2366c36")
 	)
 	(no_connect
 		(at 113.03 74.93)
@@ -2364,16 +2396,6 @@
 	(no_connect
 		(at 64.77 59.69)
 		(uuid "a9a3636d-f72c-4857-a2df-bb23d20ebdd6")
-	)
-	(wire
-		(pts
-			(xy 171.45 92.71) (xy 171.45 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "034511be-cd46-4728-bf81-bad5680a1d9e")
 	)
 	(wire
 		(pts
@@ -2404,16 +2426,6 @@
 			(type default)
 		)
 		(uuid "060f4966-50d3-41e9-924c-53f29d6cd94b")
-	)
-	(wire
-		(pts
-			(xy 138.43 95.25) (xy 154.94 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0b28f0cf-4186-4407-927e-55ed20dacd3c")
 	)
 	(wire
 		(pts
@@ -2517,7 +2529,7 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 123.19) (xy 154.94 120.65)
+			(xy 194.31 119.38) (xy 194.31 116.84)
 		)
 		(stroke
 			(width 0)
@@ -2537,7 +2549,7 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 123.19) (xy 154.94 123.19)
+			(xy 203.2 119.38) (xy 194.31 119.38)
 		)
 		(stroke
 			(width 0)
@@ -2557,6 +2569,16 @@
 	)
 	(wire
 		(pts
+			(xy 167.64 90.17) (xy 177.8 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "299b0a31-6e77-4b19-b9ad-aec70f671775")
+	)
+	(wire
+		(pts
 			(xy 74.93 121.92) (xy 83.82 121.92)
 		)
 		(stroke
@@ -2567,7 +2589,7 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 113.03) (xy 171.45 115.57)
+			(xy 210.82 109.22) (xy 210.82 111.76)
 		)
 		(stroke
 			(width 0)
@@ -2584,6 +2606,16 @@
 			(type default)
 		)
 		(uuid "301f47a5-592d-4b0d-934c-1b120e375fa1")
+	)
+	(wire
+		(pts
+			(xy 138.43 82.55) (xy 194.31 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "33c9f3a1-e8a0-4ce7-aff3-cd41aef977de")
 	)
 	(wire
 		(pts
@@ -2657,16 +2689,6 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 90.17) (xy 165.1 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4d4402a9-afb3-4e16-beeb-c12eece42c76")
-	)
-	(wire
-		(pts
 			(xy 138.43 64.77) (xy 154.94 64.77)
 		)
 		(stroke
@@ -2697,6 +2719,16 @@
 	)
 	(wire
 		(pts
+			(xy 167.64 90.17) (xy 167.64 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5511904c-d662-4d09-84ed-9c2dc3ca7f26")
+	)
+	(wire
+		(pts
 			(xy 208.28 63.5) (xy 208.28 60.96)
 		)
 		(stroke
@@ -2717,7 +2749,7 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 113.03) (xy 154.94 115.57)
+			(xy 194.31 109.22) (xy 194.31 111.76)
 		)
 		(stroke
 			(width 0)
@@ -2767,7 +2799,7 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 73.66) (xy 165.1 78.74)
+			(xy 167.64 107.95) (xy 167.64 102.87)
 		)
 		(stroke
 			(width 0)
@@ -2787,7 +2819,7 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 120.65) (xy 171.45 123.19)
+			(xy 210.82 116.84) (xy 210.82 119.38)
 		)
 		(stroke
 			(width 0)
@@ -2797,7 +2829,7 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 73.66) (xy 153.67 78.74)
+			(xy 156.21 107.95) (xy 156.21 102.87)
 		)
 		(stroke
 			(width 0)
@@ -2917,6 +2949,16 @@
 	)
 	(wire
 		(pts
+			(xy 156.21 87.63) (xy 156.21 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "944ab79f-6e67-4b0e-b17d-ea9e80b240ea")
+	)
+	(wire
+		(pts
 			(xy 125.73 35.56) (xy 119.38 35.56)
 		)
 		(stroke
@@ -2927,7 +2969,7 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 90.17) (xy 177.8 90.17)
+			(xy 138.43 90.17) (xy 167.64 90.17)
 		)
 		(stroke
 			(width 0)
@@ -2957,7 +2999,7 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 125.73) (xy 163.83 123.19)
+			(xy 203.2 121.92) (xy 203.2 119.38)
 		)
 		(stroke
 			(width 0)
@@ -2967,7 +3009,7 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 123.19) (xy 163.83 123.19)
+			(xy 210.82 119.38) (xy 203.2 119.38)
 		)
 		(stroke
 			(width 0)
@@ -2997,7 +3039,7 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 87.63) (xy 153.67 87.63)
+			(xy 138.43 87.63) (xy 156.21 87.63)
 		)
 		(stroke
 			(width 0)
@@ -3024,16 +3066,6 @@
 			(type default)
 		)
 		(uuid "a781174b-9557-4181-a3d9-345bcd696fde")
-	)
-	(wire
-		(pts
-			(xy 138.43 92.71) (xy 171.45 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a99b371a-ebad-4a37-8dfe-275db6aeb019")
 	)
 	(wire
 		(pts
@@ -3087,6 +3119,16 @@
 	)
 	(wire
 		(pts
+			(xy 210.82 80.01) (xy 210.82 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b49a1101-bd89-4a02-a64c-74167295435b")
+	)
+	(wire
+		(pts
 			(xy 83.82 87.63) (xy 83.82 105.41)
 		)
 		(stroke
@@ -3124,26 +3166,6 @@
 			(type default)
 		)
 		(uuid "bc8a53b8-2005-4fd3-ace1-9c9e968a71a0")
-	)
-	(wire
-		(pts
-			(xy 138.43 90.17) (xy 165.1 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bd9edb3d-50ea-4057-8b20-a0ea2d15f1d6")
-	)
-	(wire
-		(pts
-			(xy 153.67 87.63) (xy 177.8 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c03b83ea-7044-4998-a205-46e5f0544757")
 	)
 	(wire
 		(pts
@@ -3187,13 +3209,13 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 87.63) (xy 153.67 83.82)
+			(xy 156.21 87.63) (xy 177.8 87.63)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c424c9ee-8efc-4f55-8ee5-4247f4acda76")
+		(uuid "c84d784a-94e8-4c34-80aa-668178d9eba6")
 	)
 	(wire
 		(pts
@@ -3217,7 +3239,17 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 73.66) (xy 165.1 73.66)
+			(xy 138.43 80.01) (xy 210.82 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ccb01966-7ce2-44e1-80c2-55c2f53e3713")
+	)
+	(wire
+		(pts
+			(xy 171.45 107.95) (xy 167.64 107.95)
 		)
 		(stroke
 			(width 0)
@@ -3227,7 +3259,7 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 73.66) (xy 153.67 73.66)
+			(xy 167.64 107.95) (xy 156.21 107.95)
 		)
 		(stroke
 			(width 0)
@@ -3257,7 +3289,7 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 95.25) (xy 154.94 107.95)
+			(xy 194.31 82.55) (xy 194.31 104.14)
 		)
 		(stroke
 			(width 0)
@@ -3436,6 +3468,17 @@
 		)
 		(uuid "0dff76b3-39d0-4212-ad57-27888e02194f")
 	)
+	(hierarchical_label "CAN_STANDBY"
+		(shape output)
+		(at 138.43 85.09 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "33faa907-47a8-43cf-95c0-41758a6f7f05")
+	)
 	(hierarchical_label "P3V3"
 		(shape input)
 		(at 106.68 55.88 180)
@@ -3468,6 +3511,28 @@
 			(justify right)
 		)
 		(uuid "50e28477-b0d6-4a3b-881c-9bb41dfae930")
+	)
+	(hierarchical_label "CAN_RX"
+		(shape input)
+		(at 138.43 92.71 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5a12f689-b43c-40e3-b6f8-f606a8f8934c")
+	)
+	(hierarchical_label "UART_TX"
+		(shape output)
+		(at 138.43 69.85 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5ae2e7d5-92f5-4047-8b72-94f0e5eac727")
 	)
 	(hierarchical_label "I2C_SCL"
 		(shape bidirectional)
@@ -3548,7 +3613,7 @@
 	)
 	(hierarchical_label "P3V3"
 		(shape input)
-		(at 168.91 73.66 0)
+		(at 171.45 107.95 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3559,7 +3624,7 @@
 	)
 	(hierarchical_label "GND"
 		(shape input)
-		(at 163.83 125.73 270)
+		(at 203.2 121.92 270)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3579,6 +3644,17 @@
 		)
 		(uuid "e36383ba-2da3-4f16-acaa-7370c52394b3")
 	)
+	(hierarchical_label "UART_RX"
+		(shape input)
+		(at 138.43 72.39 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ed56f582-4670-4c25-9992-55dda9a6a620")
+	)
 	(hierarchical_label "P3V3"
 		(shape input)
 		(at 217.17 63.5 0)
@@ -3589,6 +3665,17 @@
 			(justify left)
 		)
 		(uuid "f0c212d0-f86a-4726-a3ca-8d7da058609a")
+	)
+	(hierarchical_label "CAN_TX"
+		(shape output)
+		(at 138.43 95.25 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f8d5f66e-8fef-45ac-930d-f8167a65b97e")
 	)
 	(symbol
 		(lib_id "Device:R_Small")
@@ -3685,7 +3772,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 153.67 81.28 0)
+		(at 156.21 100.33 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3696,7 +3783,7 @@
 		(fields_autoplaced yes)
 		(uuid "0b5e7cbc-05c0-4b23-993d-580bef202646")
 		(property "Reference" "R20"
-			(at 156.21 80.0099 0)
+			(at 158.75 99.0599 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3707,7 +3794,7 @@
 			)
 		)
 		(property "Value" "10K"
-			(at 156.21 82.5499 0)
+			(at 158.75 101.5999 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3718,7 +3805,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 153.67 81.28 0)
+			(at 156.21 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3729,7 +3816,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 153.67 81.28 0)
+			(at 156.21 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3740,7 +3827,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 153.67 81.28 0)
+			(at 156.21 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3751,7 +3838,7 @@
 			)
 		)
 		(property "LCSC" "C25744"
-			(at 153.67 81.28 0)
+			(at 156.21 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3777,8 +3864,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
-		(at 154.94 118.11 0)
+		(lib_id "MCU_ST_STM32L4:STM32L432KBUx")
+		(at 125.73 85.09 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3787,20 +3874,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "2075593b-b8e4-467a-9aa9-ad9ec82bfa1b")
-		(property "Reference" "R1"
-			(at 157.48 116.8399 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "200"
-			(at 157.48 119.3799 0)
+		(uuid "0bf5d250-c812-4e42-9a55-9f3242d9e379")
+		(property "Reference" "U9"
+			(at 127.8733 110.49 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3810,8 +3886,205 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 154.94 118.11 0)
+		(property "Value" "STM32L432KBUx"
+			(at 127.8733 113.03 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.45x3.45mm"
+			(at 115.57 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Datasheet" "https://www.st.com/resource/en/datasheet/stm32l432kb.pdf"
+			(at 125.73 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "STMicroelectronics Arm Cortex-M4 MCU, 128KB flash, 64KB RAM, 80 MHz, 1.71-3.6V, 26 GPIO, UFQFPN32"
+			(at 125.73 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C2928224"
+			(at 125.73 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "32"
+			(uuid "4ae23260-a3c9-4d43-bf9b-ee4d21ac82bf")
+		)
+		(pin "33"
+			(uuid "4e6d1212-e61f-424a-a416-7ab8b02cb58b")
+		)
+		(pin "17"
+			(uuid "4524a0fe-5220-446b-b605-ef774f328be0")
+		)
+		(pin "29"
+			(uuid "75bce1f9-557d-4af4-9db3-250a1eebdb41")
+		)
+		(pin "30"
+			(uuid "800fc964-01cf-42dd-ab21-5a26d576fa1f")
+		)
+		(pin "24"
+			(uuid "52fe0e56-744e-4f8d-83ca-964eeb25343a")
+		)
+		(pin "28"
+			(uuid "b7172149-ff47-4740-ac72-4ce5cc750aea")
+		)
+		(pin "7"
+			(uuid "54be1344-d3b9-44e7-9e1d-5c4b379cf5dc")
+		)
+		(pin "31"
+			(uuid "a350c940-3449-42a0-9dff-07220f2e1c1b")
+		)
+		(pin "2"
+			(uuid "7b9cdd29-8885-4e9c-b32f-f23f8bb14921")
+		)
+		(pin "5"
+			(uuid "0645fe6b-f026-45bb-a301-32f0655c0440")
+		)
+		(pin "6"
+			(uuid "f99e48a5-61c0-4495-a1e1-d1944cff10ec")
+		)
+		(pin "1"
+			(uuid "a75cc7a8-89f5-4b0d-ac4c-09411df85232")
+		)
+		(pin "4"
+			(uuid "a0e7cfa7-a489-44eb-b187-a50e5a33f61c")
+		)
+		(pin "3"
+			(uuid "ed143394-27e9-485e-ac99-01f0395dd50d")
+		)
+		(pin "21"
+			(uuid "d163120a-91ff-453b-a188-51aa0839e5c4")
+		)
+		(pin "8"
+			(uuid "d4772e39-fef0-41cb-b401-3b0be1e42828")
+		)
+		(pin "10"
+			(uuid "f5dea51e-fe88-4ec2-8d1f-d3b209e59058")
+		)
+		(pin "22"
+			(uuid "c6ed1e0d-80b5-4565-a027-7e9308b8f564")
+		)
+		(pin "11"
+			(uuid "a1072a3e-6a7f-4a11-b2fb-8279eb4864e0")
+		)
+		(pin "23"
+			(uuid "56a42631-6c75-407e-8f99-894b5cece13e")
+		)
+		(pin "18"
+			(uuid "f6154142-3602-4957-af34-f0044ae74345")
+		)
+		(pin "19"
+			(uuid "a79f272c-5d97-4260-a892-b84bdc58cc07")
+		)
+		(pin "12"
+			(uuid "dd6b23ea-7a03-4a9d-8fd0-2903c1d9d547")
+		)
+		(pin "13"
+			(uuid "99ecba59-b8c9-405b-85ec-bd7a569766a9")
+		)
+		(pin "20"
+			(uuid "f396a70c-67a7-4765-b55e-817c93827204")
+		)
+		(pin "16"
+			(uuid "e8328cb1-8c60-4ae5-b7cd-c4d71a30221f")
+		)
+		(pin "15"
+			(uuid "4bcddd5b-757b-484c-99bb-0d0c089c4a65")
+		)
+		(pin "9"
+			(uuid "a4be152c-543d-4280-aeea-23c9178acfb2")
+		)
+		(pin "14"
+			(uuid "6ec6c4e9-ffd8-4b41-9899-303d3cb1fe5f")
+		)
+		(pin "27"
+			(uuid "e9b56c2b-b3c0-4d3b-9559-bfb1dd2675fc")
+		)
+		(pin "25"
+			(uuid "3009d877-8475-4f33-b6b4-b26fce411a68")
+		)
+		(pin "26"
+			(uuid "06c3fedf-8a4e-42a1-bd1c-5772c7346d59")
+		)
+		(instances
+			(project "co2_sensor_module"
+				(path "/58639344-3050-41c9-a876-6afa82650aa6/0855eb91-09c9-44ec-a92e-6b9e695015ee"
+					(reference "U9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 92.71 114.3 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "1f0006d3-db82-4193-a17d-42426bf63712")
+		(property "Reference" "R24"
+			(at 93.726 112.014 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100K"
+			(at 93.98 116.078 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 92.71 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3822,7 +4095,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 154.94 118.11 0)
+			(at 92.71 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3833,7 +4106,100 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 154.94 118.11 0)
+			(at 92.71 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C25741"
+			(at 92.71 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "17580ceb-ec24-4323-8080-b34825d3cfd6")
+		)
+		(pin "1"
+			(uuid "b5246100-b662-4e98-99b9-b68c859bbe0b")
+		)
+		(instances
+			(project "co2_sensor_module"
+				(path "/58639344-3050-41c9-a876-6afa82650aa6/0855eb91-09c9-44ec-a92e-6b9e695015ee"
+					(reference "R24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 194.31 114.3 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2075593b-b8e4-467a-9aa9-ad9ec82bfa1b")
+		(property "Reference" "R1"
+			(at 196.85 113.0299 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "200"
+			(at 196.85 115.5699 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 194.31 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 194.31 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 194.31 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3844,7 +4210,7 @@
 			)
 		)
 		(property "LCSC" "C8218"
-			(at 154.94 118.11 0)
+			(at 194.31 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3871,7 +4237,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 83.82 114.3 0)
+		(at 74.93 114.3 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3879,9 +4245,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "33780bdc-f0de-4467-9020-2bf53abb4a8b")
-		(property "Reference" "R13"
-			(at 84.836 112.014 0)
+		(uuid "27da5f59-f391-444a-b7f7-60eb0d1365b1")
+		(property "Reference" "R22"
+			(at 75.946 112.014 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3892,7 +4258,7 @@
 			)
 		)
 		(property "Value" "100K"
-			(at 85.09 116.078 0)
+			(at 76.2 116.078 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3902,8 +4268,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 83.82 114.3 0)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 74.93 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3914,7 +4280,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 83.82 114.3 0)
+			(at 74.93 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3925,7 +4291,18 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 83.82 114.3 0)
+			(at 74.93 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C25741"
+			(at 74.93 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3936,15 +4313,15 @@
 			)
 		)
 		(pin "2"
-			(uuid "168408ab-5a8c-43ca-a463-de0e58f1eada")
+			(uuid "66d93086-73e7-4c79-8a97-c89b5d1b79ec")
 		)
 		(pin "1"
-			(uuid "ca49c435-1695-4485-bf35-1461d418bcab")
+			(uuid "5d30a03f-9b66-4826-a49c-cc3bd7103b7e")
 		)
 		(instances
 			(project "co2_sensor_module"
 				(path "/58639344-3050-41c9-a876-6afa82650aa6/0855eb91-09c9-44ec-a92e-6b9e695015ee"
-					(reference "R13")
+					(reference "R22")
 					(unit 1)
 				)
 			)
@@ -4037,6 +4414,98 @@
 			(project "co2_sensor_module"
 				(path "/58639344-3050-41c9-a876-6afa82650aa6/0855eb91-09c9-44ec-a92e-6b9e695015ee"
 					(reference "C3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 83.82 114.3 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "45078bcf-dabc-4215-9329-34502804db5b")
+		(property "Reference" "R23"
+			(at 84.836 112.014 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100K"
+			(at 85.09 116.078 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 83.82 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 83.82 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 83.82 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C25741"
+			(at 83.82 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "d284d1ef-9ca6-468d-bca3-cc6eddb94adf")
+		)
+		(pin "1"
+			(uuid "8aa48fbf-8413-4dcf-9eb2-e693b9037c51")
+		)
+		(instances
+			(project "co2_sensor_module"
+				(path "/58639344-3050-41c9-a876-6afa82650aa6/0855eb91-09c9-44ec-a92e-6b9e695015ee"
+					(reference "R23")
 					(unit 1)
 				)
 			)
@@ -4228,7 +4697,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED_Small")
-		(at 171.45 110.49 90)
+		(at 210.82 106.68 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4239,7 +4708,7 @@
 		(fields_autoplaced yes)
 		(uuid "60822e16-fa68-4f3e-b866-5ae7466e5c50")
 		(property "Reference" "D3"
-			(at 173.99 109.1564 90)
+			(at 213.36 105.3464 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4250,7 +4719,7 @@
 			)
 		)
 		(property "Value" "LED_Green"
-			(at 173.99 111.6964 90)
+			(at 213.36 107.8864 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4261,7 +4730,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
-			(at 171.45 110.49 90)
+			(at 210.82 106.68 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4272,7 +4741,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 171.45 110.49 90)
+			(at 210.82 106.68 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4283,7 +4752,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode, small symbol"
-			(at 171.45 110.49 0)
+			(at 210.82 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4294,7 +4763,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 171.45 110.49 0)
+			(at 210.82 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4305,7 +4774,7 @@
 			)
 		)
 		(property "LCSC" "C2297"
-			(at 171.45 110.49 90)
+			(at 210.82 106.68 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4332,7 +4801,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 171.45 118.11 0)
+		(at 210.82 114.3 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4343,7 +4812,7 @@
 		(fields_autoplaced yes)
 		(uuid "6455c88a-a2a7-4286-b075-7bbc23bf7c77")
 		(property "Reference" "R2"
-			(at 173.99 116.8399 0)
+			(at 213.36 113.0299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4354,7 +4823,7 @@
 			)
 		)
 		(property "Value" "200"
-			(at 173.99 119.3799 0)
+			(at 213.36 115.5699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4365,7 +4834,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 171.45 118.11 0)
+			(at 210.82 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4376,7 +4845,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 171.45 118.11 0)
+			(at 210.82 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4387,7 +4856,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 171.45 118.11 0)
+			(at 210.82 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4398,7 +4867,7 @@
 			)
 		)
 		(property "LCSC" "C8218"
-			(at 171.45 118.11 0)
+			(at 210.82 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4516,170 +4985,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
-		(at 92.71 114.3 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "9c178c34-37dc-47d0-9a20-819cd226d359")
-		(property "Reference" "R14"
-			(at 93.726 112.014 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100K"
-			(at 93.98 116.078 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 92.71 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 92.71 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 92.71 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "a28de583-a5e7-414d-9a84-dfa172dd398d")
-		)
-		(pin "1"
-			(uuid "2947bf67-e34f-4b65-92a4-eb9d0434d5c2")
-		)
-		(instances
-			(project "co2_sensor_module"
-				(path "/58639344-3050-41c9-a876-6afa82650aa6/0855eb91-09c9-44ec-a92e-6b9e695015ee"
-					(reference "R14")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 74.93 114.3 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "a059ff81-0290-4867-ad11-87ba62ad2d91")
-		(property "Reference" "R12"
-			(at 75.946 112.014 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100K"
-			(at 76.2 116.078 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 74.93 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 74.93 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 74.93 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "42e9c76d-b489-494a-8648-e0a7601e8a56")
-		)
-		(pin "1"
-			(uuid "ba8d4c37-d9cd-4f1d-961a-8fb2f5716ece")
-		)
-		(instances
-			(project "co2_sensor_module"
-				(path "/58639344-3050-41c9-a876-6afa82650aa6/0855eb91-09c9-44ec-a92e-6b9e695015ee"
-					(reference "R12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:LED_Small")
-		(at 154.94 110.49 90)
+		(at 194.31 106.68 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4690,7 +4997,7 @@
 		(fields_autoplaced yes)
 		(uuid "ac2d102d-ef83-43fa-bc36-622ae3ee7605")
 		(property "Reference" "D2"
-			(at 157.48 109.1564 90)
+			(at 196.85 105.3464 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4701,7 +5008,7 @@
 			)
 		)
 		(property "Value" "LED_Red"
-			(at 157.48 111.6964 90)
+			(at 196.85 107.8864 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4712,7 +5019,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
-			(at 154.94 110.49 90)
+			(at 194.31 106.68 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4723,7 +5030,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 154.94 110.49 90)
+			(at 194.31 106.68 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4734,7 +5041,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode, small symbol"
-			(at 154.94 110.49 0)
+			(at 194.31 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4745,7 +5052,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 154.94 110.49 0)
+			(at 194.31 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4756,7 +5063,7 @@
 			)
 		)
 		(property "LCSC" "C84256"
-			(at 154.94 110.49 90)
+			(at 194.31 106.68 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4776,193 +5083,6 @@
 			(project "co2_sensor_module"
 				(path "/58639344-3050-41c9-a876-6afa82650aa6/0855eb91-09c9-44ec-a92e-6b9e695015ee"
 					(reference "D2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "MCU_ST_STM32L4:STM32L431KBUx")
-		(at 125.73 85.09 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "af8ecdee-1664-413c-a2fd-6eb6bcf4e1d8")
-		(property "Reference" "U1"
-			(at 127.8733 110.49 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "STM32L431KBUx"
-			(at 127.8733 113.03 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.45x3.45mm"
-			(at 115.57 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Datasheet" "https://www.st.com/resource/en/datasheet/stm32l431kb.pdf"
-			(at 125.73 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "STMicroelectronics Arm Cortex-M4 MCU, 128KB flash, 64KB RAM, 80 MHz, 1.71-3.6V, 26 GPIO, UFQFPN32"
-			(at 125.73 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C2826408"
-			(at 125.73 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "10"
-			(uuid "7c70d181-3fb7-4a16-b2e2-50e4b66bcddc")
-		)
-		(pin "13"
-			(uuid "451c97a7-8834-48be-ace2-b20d88954a18")
-		)
-		(pin "7"
-			(uuid "59b292d9-458d-40f0-819f-f4ff332e1cb8")
-		)
-		(pin "23"
-			(uuid "60a36c85-d4dd-4862-ba4b-e314e4f18c28")
-		)
-		(pin "6"
-			(uuid "af3ee842-61e2-4c06-82fb-58026acf8470")
-		)
-		(pin "8"
-			(uuid "c620f6d8-1c43-4914-a9af-d35189b0df4e")
-		)
-		(pin "11"
-			(uuid "6e1001dc-bc96-4a92-a048-ca407a9aad31")
-		)
-		(pin "14"
-			(uuid "4e4c1dd2-b52a-43c4-b608-9c8814234104")
-		)
-		(pin "12"
-			(uuid "ecf462a9-c67b-4268-96b3-4ec7ac7fe32d")
-		)
-		(pin "15"
-			(uuid "747077f9-9d9e-4d46-b3e8-02d8ad96f8c0")
-		)
-		(pin "31"
-			(uuid "1ad6137a-de19-4768-af5c-37104d036f2a")
-		)
-		(pin "19"
-			(uuid "1ce09a8d-36e1-4652-a9cf-236dcaea04f3")
-		)
-		(pin "9"
-			(uuid "33ef8970-752f-4e03-9cbf-42029f3ad988")
-		)
-		(pin "24"
-			(uuid "1c70e04e-75c9-4ae3-9a7f-b26279d93b68")
-		)
-		(pin "29"
-			(uuid "56bbc6c3-36b3-4c42-ac67-5894c647bd2c")
-		)
-		(pin "27"
-			(uuid "ecce04bd-5f23-40ce-b0be-8efa92f6cda5")
-		)
-		(pin "20"
-			(uuid "77eb12e1-db57-4bbe-9776-d06a8b211517")
-		)
-		(pin "32"
-			(uuid "2bdee106-7a76-4ad7-ac4b-f00acff86823")
-		)
-		(pin "25"
-			(uuid "a6a16dc1-04c8-47f7-99d4-602e6be93938")
-		)
-		(pin "21"
-			(uuid "e742883a-5bee-4e64-9a48-3819de6ba7c4")
-		)
-		(pin "26"
-			(uuid "2e92d003-05cf-49e8-9a84-2a3b247086e4")
-		)
-		(pin "30"
-			(uuid "a504f621-56c6-4485-8efc-6443108a10ca")
-		)
-		(pin "28"
-			(uuid "c6ef8fc1-1198-4b5f-9235-f0a9642792a0")
-		)
-		(pin "16"
-			(uuid "9e36870e-1e83-4c75-8040-e9ddd132b69f")
-		)
-		(pin "17"
-			(uuid "0854e5a7-bb9d-43b0-a283-8606a59c7b87")
-		)
-		(pin "22"
-			(uuid "24c9734b-8f08-41e2-9ec0-fa2bc212b047")
-		)
-		(pin "18"
-			(uuid "e00c83a0-214b-4229-98b8-440477abc300")
-		)
-		(pin "1"
-			(uuid "6ba6ec29-9eb0-4303-8c54-4e455b50690e")
-		)
-		(pin "2"
-			(uuid "004334ae-2c93-4b23-9bcb-4843199bc1d4")
-		)
-		(pin "3"
-			(uuid "e79ace04-002b-4ea3-a53c-a83c4a57c30f")
-		)
-		(pin "4"
-			(uuid "e680f571-0561-4cd0-bfd9-ff721410e5f1")
-		)
-		(pin "5"
-			(uuid "fc007941-4f3a-4533-8134-5ae957fb19dc")
-		)
-		(pin "33"
-			(uuid "ca3d7ad2-eccb-465b-8660-186948c95700")
-		)
-		(instances
-			(project "co2_sensor_module"
-				(path "/58639344-3050-41c9-a876-6afa82650aa6/0855eb91-09c9-44ec-a92e-6b9e695015ee"
-					(reference "U1")
 					(unit 1)
 				)
 			)
@@ -5157,7 +5277,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 165.1 81.28 0)
+		(at 167.64 100.33 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5168,7 +5288,7 @@
 		(fields_autoplaced yes)
 		(uuid "cd1bc797-e4c5-4845-ac85-4aff416fc559")
 		(property "Reference" "R19"
-			(at 167.64 80.0099 0)
+			(at 170.18 99.0599 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5179,7 +5299,7 @@
 			)
 		)
 		(property "Value" "10K"
-			(at 167.64 82.5499 0)
+			(at 170.18 101.5999 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5190,7 +5310,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 165.1 81.28 0)
+			(at 167.64 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5201,7 +5321,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 165.1 81.28 0)
+			(at 167.64 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5212,7 +5332,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 165.1 81.28 0)
+			(at 167.64 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5223,7 +5343,7 @@
 			)
 		)
 		(property "LCSC" "C25744"
-			(at 165.1 81.28 0)
+			(at 167.64 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5336,6 +5456,98 @@
 			(project "co2_sensor_module"
 				(path "/58639344-3050-41c9-a876-6afa82650aa6/0855eb91-09c9-44ec-a92e-6b9e695015ee"
 					(reference "C21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 101.6 114.3 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d2cba2ad-8875-4ce1-a5b3-33ccf955b52a")
+		(property "Reference" "R25"
+			(at 102.616 112.014 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100K"
+			(at 102.87 116.078 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 101.6 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 101.6 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 101.6 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C25741"
+			(at 101.6 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "88e17851-5438-4cdc-a2f7-da71278e5499")
+		)
+		(pin "1"
+			(uuid "8f74b4ed-e9cc-4c73-91d1-56f1ea4344d7")
+		)
+		(instances
+			(project "co2_sensor_module"
+				(path "/58639344-3050-41c9-a876-6afa82650aa6/0855eb91-09c9-44ec-a92e-6b9e695015ee"
+					(reference "R25")
 					(unit 1)
 				)
 			)
@@ -5626,87 +5838,6 @@
 			(project "co2_sensor_module"
 				(path "/58639344-3050-41c9-a876-6afa82650aa6/0855eb91-09c9-44ec-a92e-6b9e695015ee"
 					(reference "U2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 101.6 114.3 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "fdd89d9a-df06-4b16-a4c2-fd0b51575e36")
-		(property "Reference" "R15"
-			(at 102.616 112.014 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100K"
-			(at 102.87 116.078 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 101.6 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 101.6 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 101.6 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "045b713b-6499-4932-906c-436b8e62d8c9")
-		)
-		(pin "1"
-			(uuid "4ed17755-5fc9-46fe-aed9-cf67e64918f5")
-		)
-		(instances
-			(project "co2_sensor_module"
-				(path "/58639344-3050-41c9-a876-6afa82650aa6/0855eb91-09c9-44ec-a92e-6b9e695015ee"
-					(reference "R15")
 					(unit 1)
 				)
 			)
