@@ -1464,6 +1464,12 @@
 		(uuid "aeb31485-1a4d-4c9b-89ef-6139b69feb6c")
 	)
 	(junction
+		(at 106.68 147.32)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b0377041-a00c-4f0e-a9a1-0925bc9ff325")
+	)
+	(junction
 		(at 106.68 58.42)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1527,7 +1533,7 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 146.05) (xy 106.68 148.59)
+			(xy 106.68 146.05) (xy 106.68 147.32)
 		)
 		(stroke
 			(width 0)
@@ -1897,6 +1903,16 @@
 	)
 	(wire
 		(pts
+			(xy 115.57 147.32) (xy 118.11 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6469ed5c-cbe2-43e2-944b-941a95c9e092")
+	)
+	(wire
+		(pts
 			(xy 83.82 161.29) (xy 83.82 121.92)
 		)
 		(stroke
@@ -1934,6 +1950,16 @@
 			(type default)
 		)
 		(uuid "70c3b965-ff7a-4f98-8f35-2f7f1bbef5ac")
+	)
+	(wire
+		(pts
+			(xy 106.68 147.32) (xy 106.68 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "72df3a94-c701-4ec8-8418-f88e19793cdc")
 	)
 	(wire
 		(pts
@@ -2207,6 +2233,16 @@
 	)
 	(wire
 		(pts
+			(xy 106.68 147.32) (xy 110.49 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e0fb9db2-5df8-41b2-b868-2d9ffac61e11")
+	)
+	(wire
+		(pts
 			(xy 93.98 132.08) (xy 119.38 132.08)
 		)
 		(stroke
@@ -2316,6 +2352,17 @@
 			(justify left)
 		)
 		(uuid "39db5165-6f79-43e5-9433-5dfe89b5afae")
+	)
+	(hierarchical_label "GND"
+		(shape input)
+		(at 118.11 147.32 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "4355592c-db01-423d-a10a-77cc9e6fbce7")
 	)
 	(hierarchical_label "P3V3"
 		(shape input)
@@ -3032,6 +3079,97 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C_Small")
+		(at 113.03 147.32 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e93c050f-5316-4e04-b425-d13965f3332a")
+		(property "Reference" "C23"
+			(at 113.0363 140.97 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100nF"
+			(at 113.0363 143.51 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 113.03 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 113.03 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 113.03 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C1525"
+			(at 113.03 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7aef653a-b86c-43b3-b596-6101fe1cc2ec")
+		)
+		(pin "2"
+			(uuid "39ff7fb1-5690-40b3-bd32-bdab7644f289")
+		)
+		(instances
+			(project "co2_sensor_module"
+				(path "/58639344-3050-41c9-a876-6afa82650aa6/b6285f15-3a4b-493b-9028-ba58592b09d4"
+					(reference "C23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "CustomSymbols:SGX-7OX")
 		(at 161.29 127 0)
 		(unit 1)
@@ -3042,7 +3180,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "d6ea0f79-8214-4b77-b97b-d3c01bd5db4c")
+		(uuid "eedefc9a-dad9-48cb-817f-1b6d311eea4b")
 		(property "Reference" "U1"
 			(at 161.29 114.3 0)
 			(show_name no)
@@ -3097,10 +3235,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "1ed4cab3-21f8-481a-a8a9-25c7f4305187")
+			(uuid "ca78b46f-5f69-4bad-8523-a974242fa49f")
 		)
 		(pin "1"
-			(uuid "52260bb6-06db-4c04-8ebb-4aae075ca0f8")
+			(uuid "750392e5-2aa3-447a-b466-ef6ffcc0fb8a")
 		)
 		(instances
 			(project "co2_sensor_module"
