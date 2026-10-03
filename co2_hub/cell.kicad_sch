@@ -2862,147 +2862,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:R_Small"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.254)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "R"
-				(at 0 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.016 1.016)
-					)
-				)
-			)
-			(property "Value" "R_Small"
-				(at 1.778 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Resistor, small symbol"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "R resistor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "R_*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "R_Small_0_1"
-				(rectangle
-					(start -0.762 1.778)
-					(end 0.762 -1.778)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "R_Small_1_1"
-				(pin passive line
-					(at 0 2.54 270)
-					(length 0.762)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -2.54 90)
-					(length 0.762)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 	)
 	(text "These caps are kinda whack but\nthe hardware sheet says so lol"
 		(exclude_from_sim no)
@@ -3057,12 +2916,6 @@
 		(uuid "87e23805-a200-49e2-8148-79169a0c1b1e")
 	)
 	(junction
-		(at 166.37 54.61)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8b4e3108-15fd-4f59-b009-2e126d5083bb")
-	)
-	(junction
 		(at 153.67 33.02)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3115,6 +2968,16 @@
 			(type default)
 		)
 		(uuid "01218645-ad95-4371-a0ba-af30517dfdd0")
+	)
+	(wire
+		(pts
+			(xy 110.49 67.31) (xy 111.76 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "02dbe53b-c264-485d-87b9-37abe70d2d21")
 	)
 	(wire
 		(pts
@@ -3208,16 +3071,6 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 40.64) (xy 166.37 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4c80e187-c2b0-439c-8d01-2bca83179081")
-	)
-	(wire
-		(pts
 			(xy 167.64 35.56) (xy 172.72 35.56)
 		)
 		(stroke
@@ -3255,26 +3108,6 @@
 			(type default)
 		)
 		(uuid "62bf6653-34e7-4a8d-9ea4-31b4a6bb83c9")
-	)
-	(wire
-		(pts
-			(xy 104.14 53.34) (xy 104.14 40.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "69d894d0-70ca-44cd-8b0f-760439274b2c")
-	)
-	(wire
-		(pts
-			(xy 104.14 67.31) (xy 111.76 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7e7fddf0-7240-4c44-855d-f206292aa7f5")
 	)
 	(wire
 		(pts
@@ -3358,16 +3191,6 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 54.61) (xy 166.37 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a17332c2-ca9c-449f-be67-0f7fe4fb2653")
-	)
-	(wire
-		(pts
 			(xy 172.72 22.86) (xy 172.72 29.21)
 		)
 		(stroke
@@ -3395,16 +3218,6 @@
 			(type default)
 		)
 		(uuid "b2c552d3-8ff8-4115-83c1-29bd494e37f4")
-	)
-	(wire
-		(pts
-			(xy 104.14 58.42) (xy 104.14 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b3cd0a16-6b1d-4467-82cf-0e88aaecc1dc")
 	)
 	(wire
 		(pts
@@ -3448,16 +3261,6 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 40.64) (xy 166.37 40.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ce7cdd21-e266-4d8c-8770-783a284686cc")
-	)
-	(wire
-		(pts
 			(xy 153.67 35.56) (xy 162.56 35.56)
 		)
 		(stroke
@@ -3468,7 +3271,7 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 54.61) (xy 180.34 54.61)
+			(xy 162.56 54.61) (xy 180.34 54.61)
 		)
 		(stroke
 			(width 0)
@@ -3651,6 +3454,17 @@
 		)
 		(uuid "831f2313-f408-495a-8e77-f9f01b4849e6")
 	)
+	(hierarchical_label "ENABLE"
+		(shape input)
+		(at 110.49 67.31 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "88ebcf1d-9aef-41ae-a8ad-f1fea9029f07")
+	)
 	(hierarchical_label "GND"
 		(shape input)
 		(at 149.86 33.02 180)
@@ -3826,89 +3640,6 @@
 			(project "co2_hub"
 				(path "/032ed60e-c83d-45fe-8a79-75f890542253/55ec85ad-7e05-4c9c-aa3d-f086fc8d1c1d"
 					(reference "C2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 104.14 55.88 0)
-		(mirror x)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "695eae8d-3e4f-44bb-8383-739750381724")
-		(property "Reference" "R1"
-			(at 101.6 54.6099 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "10K"
-			(at 101.6 57.1499 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 104.14 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 104.14 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 104.14 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "30de06c2-e61f-453b-abbb-ee79c20613e0")
-		)
-		(pin "1"
-			(uuid "bb71838f-befb-425e-825e-698127c60aa2")
-		)
-		(instances
-			(project "co2_hub"
-				(path "/032ed60e-c83d-45fe-8a79-75f890542253/55ec85ad-7e05-4c9c-aa3d-f086fc8d1c1d"
-					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -4375,6 +4106,17 @@
 					(size 1.27 1.27)
 				)
 				(justify bottom)
+			)
+		)
+		(property "LCSC" "C42236596"
+			(at 137.16 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "38"
@@ -4990,7 +4732,7 @@
 				)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "0.1uF"
 			(at 161.29 37.338 90)
 			(show_name no)
 			(do_not_autoplace no)
