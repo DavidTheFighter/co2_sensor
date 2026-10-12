@@ -482,7 +482,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Regulator_Switching:TPS62125DSG"
+		(symbol "Regulator_Switching:TPS62160DSG"
 			(pin_names
 				(offset 0.254)
 			)
@@ -502,7 +502,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "TPS62125DSG"
+			(property "Value" "TPS62160DSG"
 				(at -1.27 11.43 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -525,7 +525,7 @@
 					(justify left)
 				)
 			)
-			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tps62125.pdf"
+			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tps62160.pdf"
 				(at 0 13.97 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -536,7 +536,7 @@
 					)
 				)
 			)
-			(property "Description" "300mA Step-Down Converter with Enable Threshold and Hysteresis, adjustable output, 3-17V input voltage, WSON-8"
+			(property "Description" "1A Step-Down Converter with DCS-Control, adjustable output, 3-17V input voltage, WSON-8"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -569,7 +569,7 @@
 					)
 				)
 			)
-			(symbol "TPS62125DSG_0_1"
+			(symbol "TPS62160DSG_0_1"
 				(rectangle
 					(start -7.62 10.16)
 					(end 7.62 -7.62)
@@ -582,7 +582,7 @@
 					)
 				)
 			)
-			(symbol "TPS62125DSG_1_1"
+			(symbol "TPS62160DSG_1_1"
 				(pin power_in line
 					(at 0 -10.16 90)
 					(length 2.54)
@@ -884,6 +884,16 @@
 		)
 		(uuid "5837fcff-8adb-46f8-8960-cd830f4950e1")
 	)
+	(text "The 3.3V buck is staged to bring up after the\n5.0V buck converter to satisfy the nRF9151 cell\nmodem power on sequencing."
+		(exclude_from_sim no)
+		(at 74.93 89.408 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "f8513d81-6a40-45d6-b56c-024710b70146")
+	)
 	(junction
 		(at 241.3 55.88)
 		(diameter 0)
@@ -1011,12 +1021,6 @@
 		(uuid "d089fec2-6866-464a-b468-aaa415385ec2")
 	)
 	(junction
-		(at 67.31 54.61)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d1dcd095-dd91-41a3-9057-a94031fa27ae")
-	)
-	(junction
 		(at 200.66 80.01)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1136,16 +1140,6 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 57.15) (xy 67.31 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "17ab17b0-0e5f-4ab4-b0ce-c61b8a1e1434")
-	)
-	(wire
-		(pts
 			(xy 170.18 36.83) (xy 170.18 55.88)
 		)
 		(stroke
@@ -1223,6 +1217,16 @@
 			(type default)
 		)
 		(uuid "332f8725-ad45-434e-af4f-0b4c468f0933")
+	)
+	(wire
+		(pts
+			(xy 57.15 57.15) (xy 69.85 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3377c9c5-f7d7-4f63-9e6d-1888d60f7a96")
 	)
 	(wire
 		(pts
@@ -1366,7 +1370,7 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 54.61) (xy 69.85 54.61)
+			(xy 49.53 54.61) (xy 69.85 54.61)
 		)
 		(stroke
 			(width 0)
@@ -1393,16 +1397,6 @@
 			(type default)
 		)
 		(uuid "6fb012a6-7935-4ace-b4f5-dd089cccddc4")
-	)
-	(wire
-		(pts
-			(xy 67.31 57.15) (xy 67.31 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "712c9564-eb16-4c9e-ae79-4cc29e4559c4")
 	)
 	(wire
 		(pts
@@ -1656,16 +1650,6 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 54.61) (xy 67.31 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ba820d7b-ce64-4994-b61a-58b8fa5e6fca")
-	)
-	(wire
-		(pts
 			(xy 233.68 60.96) (xy 233.68 55.88)
 		)
 		(stroke
@@ -1853,6 +1837,46 @@
 			(type default)
 		)
 		(uuid "fdce6f13-d1db-476d-9e86-dabb80b8a950")
+	)
+	(label "P5V0_PGOOD"
+		(at 231.14 85.09 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3a5568ed-545b-4835-9014-4b7e077a9540")
+	)
+	(label "P3V3"
+		(at 116.84 54.61 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "62b83c71-2450-436b-a2e0-b07a05c04d27")
+	)
+	(label "P5V0"
+		(at 241.3 55.88 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6d8b1aff-1079-485c-ac65-74bf01090322")
+	)
+	(label "P5V0_PGOOD"
+		(at 57.15 57.15 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ba362efc-981c-4484-a13f-4eae9d95920e")
 	)
 	(hierarchical_label "Vbus"
 		(shape input)
@@ -2748,119 +2772,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Regulator_Switching:TPS62125DSG")
-		(at 80.01 62.23 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "941cb85a-4704-4a93-81c2-0215a71461bc")
-		(property "Reference" "U10"
-			(at 80.01 46.99 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "TPS62125DSG"
-			(at 80.01 49.53 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_SON:Texas_DSG0008A_WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm_ThermalVias"
-			(at 83.82 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tps62125.pdf"
-			(at 80.01 48.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "300mA Step-Down Converter with Enable Threshold and Hysteresis, adjustable output, 3-17V input voltage, WSON-8"
-			(at 80.01 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C324076"
-			(at 80.01 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "d6c6edf1-001c-4c5a-8b86-1da91d448f6a")
-		)
-		(pin "2"
-			(uuid "b9105852-8609-4fb7-aa4d-7d6f81de8a1e")
-		)
-		(pin "7"
-			(uuid "1b206eda-eb6f-48a6-92b8-8131c3910e70")
-		)
-		(pin "4"
-			(uuid "4172e213-f593-4d96-98ee-913f39b45d81")
-		)
-		(pin "5"
-			(uuid "6c462602-8071-4cab-bf9e-490aab195863")
-		)
-		(pin "3"
-			(uuid "eb6634d1-ba52-4ef8-808a-610e66d6407b")
-		)
-		(pin "9"
-			(uuid "adff427e-11fd-4051-ac69-bf46618150d8")
-		)
-		(pin "6"
-			(uuid "3fac19a1-e0a2-4c7d-a5b2-c3aec638c28d")
-		)
-		(pin "8"
-			(uuid "90b3d3a5-660b-423d-9afa-d0a63d425166")
-		)
-		(instances
-			(project "co2_hub"
-				(path "/032ed60e-c83d-45fe-8a79-75f890542253/3dab47bd-f169-4f09-a581-2ec0e2e7cd73"
-					(reference "U10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_Small")
 		(at 128.27 63.5 0)
 		(unit 1)
@@ -3045,7 +2956,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Regulator_Switching:TPS62125DSG")
+		(lib_id "Regulator_Switching:TPS62160DSG")
 		(at 200.66 63.5 0)
 		(unit 1)
 		(body_style 1)
@@ -3055,8 +2966,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "b76ce886-bc4d-4492-93ae-3fe3a7fd52e7")
-		(property "Reference" "U4"
+		(uuid "b9b1797e-d49a-4eb5-b014-bc8601aafcea")
+		(property "Reference" "U8"
 			(at 200.66 48.26 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3066,7 +2977,7 @@
 				)
 			)
 		)
-		(property "Value" "TPS62125DSG"
+		(property "Value" "TPS62160DSG"
 			(at 200.66 50.8 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3088,7 +2999,7 @@
 				(justify left)
 			)
 		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tps62125.pdf"
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tps62160.pdf"
 			(at 200.66 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -3099,7 +3010,7 @@
 				)
 			)
 		)
-		(property "Description" "300mA Step-Down Converter with Enable Threshold and Hysteresis, adjustable output, 3-17V input voltage, WSON-8"
+		(property "Description" "1A Step-Down Converter with DCS-Control, adjustable output, 3-17V input voltage, WSON-8"
 			(at 200.66 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -3110,7 +3021,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C324076"
+		(property "LCSC" "C324077"
 			(at 200.66 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -3120,38 +3031,38 @@
 					(size 1.27 1.27)
 				)
 			)
-		)
-		(pin "1"
-			(uuid "c1959101-679c-467b-9e67-47bc9ccd3d4d")
-		)
-		(pin "2"
-			(uuid "1e226ef1-1476-4dd3-ae45-e163da9a1feb")
-		)
-		(pin "7"
-			(uuid "21189728-a0de-40e0-b539-c60f0d644f74")
-		)
-		(pin "4"
-			(uuid "a08bf99d-4563-4051-81b1-c834f9b56272")
-		)
-		(pin "5"
-			(uuid "7d36406a-644d-4319-b9eb-82030a7e2771")
 		)
 		(pin "3"
-			(uuid "ea1559d6-9067-4fd3-9c0d-8e0558da252f")
+			(uuid "286468fd-2a22-4651-9737-8895ddb6d8fa")
 		)
-		(pin "9"
-			(uuid "bb65b6a3-56aa-459e-b188-c5356005e8e6")
+		(pin "4"
+			(uuid "16f32270-612b-4f11-9fd6-1f06fec06a50")
+		)
+		(pin "5"
+			(uuid "834ea6d0-9e6c-449b-8dab-83c37c06f691")
+		)
+		(pin "7"
+			(uuid "ce7e8cf3-60ab-422a-8fb7-6302a288b039")
 		)
 		(pin "6"
-			(uuid "10634c56-f7cb-4953-b4c0-b6c7d29af853")
+			(uuid "57670722-53ee-444d-ab49-e01d86d09d0e")
+		)
+		(pin "1"
+			(uuid "a8d7042b-2d85-4cdf-a217-6e9f69aee7dd")
+		)
+		(pin "2"
+			(uuid "9679a3c5-8952-4d2f-b16f-7403273adf25")
+		)
+		(pin "9"
+			(uuid "c99813d7-18a7-49e5-89f3-6b9c01b668ae")
 		)
 		(pin "8"
-			(uuid "58ff6dd5-4bf7-4e44-a326-d1adeb0916db")
+			(uuid "9c03cbaa-eb7b-4da2-ae3a-31ba69f54c2a")
 		)
 		(instances
 			(project "co2_hub"
 				(path "/032ed60e-c83d-45fe-8a79-75f890542253/3dab47bd-f169-4f09-a581-2ec0e2e7cd73"
-					(reference "U4")
+					(reference "U8")
 					(unit 1)
 				)
 			)
@@ -3323,6 +3234,119 @@
 			(project "co2_hub"
 				(path "/032ed60e-c83d-45fe-8a79-75f890542253/3dab47bd-f169-4f09-a581-2ec0e2e7cd73"
 					(reference "C7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Regulator_Switching:TPS62160DSG")
+		(at 80.01 62.23 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c9f1d11f-5c49-4608-8951-6fb0b8055ab7")
+		(property "Reference" "U4"
+			(at 80.01 46.99 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TPS62160DSG"
+			(at 80.01 49.53 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SON:Texas_DSG0008A_WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm_ThermalVias"
+			(at 83.82 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tps62160.pdf"
+			(at 80.01 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "1A Step-Down Converter with DCS-Control, adjustable output, 3-17V input voltage, WSON-8"
+			(at 80.01 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C324077"
+			(at 80.01 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "d4d09722-8b1e-4088-b989-93d3e1cd6ce8")
+		)
+		(pin "4"
+			(uuid "df67170e-3e06-4cca-b4db-7dd91ec37f4f")
+		)
+		(pin "5"
+			(uuid "83be940e-df88-41de-88e8-d1dd606ee8d0")
+		)
+		(pin "7"
+			(uuid "d5a66426-c4b2-4cb3-aa11-1d4146a4761d")
+		)
+		(pin "6"
+			(uuid "d752f489-5fdd-466f-ba0a-1717da7daf3c")
+		)
+		(pin "1"
+			(uuid "4fc76d47-7234-44d6-aca4-450d32f747d1")
+		)
+		(pin "2"
+			(uuid "34abc919-7e1a-486e-b1b3-f07d4434d9ac")
+		)
+		(pin "9"
+			(uuid "70f5fb24-638c-4c78-9bd5-463b014c970a")
+		)
+		(pin "8"
+			(uuid "8ca98cf0-a63f-4333-94c7-1669ff9ea622")
+		)
+		(instances
+			(project "co2_hub"
+				(path "/032ed60e-c83d-45fe-8a79-75f890542253/3dab47bd-f169-4f09-a581-2ec0e2e7cd73"
+					(reference "U4")
 					(unit 1)
 				)
 			)

@@ -1064,16 +1064,6 @@
 		)
 		(uuid "d50bd86f-807b-456b-a4aa-c94814192c6f")
 	)
-	(text "I'm realizing as I'm making this the cable is basically a huge\nantenna and nah I can't be bothered to add any galvanic isolation\nor TVS. For now lightning, solar flares, and radio stations can do\ntheir worst :D"
-		(exclude_from_sim no)
-		(at 252.984 70.358 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "e053cc52-b502-4f54-b72f-15c2010b9fbc")
-	)
 	(junction
 		(at 97.79 102.87)
 		(diameter 0)
