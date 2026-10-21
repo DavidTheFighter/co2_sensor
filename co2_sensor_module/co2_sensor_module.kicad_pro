@@ -560,7 +560,7 @@
       "netlist": "",
       "plot": "../../../Documents/co2_sensor_module_fab/",
       "specctra_dsn": "",
-      "step": "",
+      "step": "../../../Downloads/co2_sensor_module.step",
       "vrml": ""
     },
     "page_layout_descr_file": ""

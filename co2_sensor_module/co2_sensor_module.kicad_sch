@@ -2760,7 +2760,7 @@
 				)
 			)
 		)
-		(property "Value" "D_Schottky"
+		(property "Value" "B5819W Schottky"
 			(at 202.8825 52.07 0)
 			(show_name no)
 			(do_not_autoplace no)
