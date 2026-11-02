@@ -6,52 +6,6 @@
 	(paper "A4")
 	(lib_symbols)
 	(sheet
-		(at 125.73 39.37)
-		(size 33.02 24.13)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0)
-		)
-		(uuid "2a4e89c0-1e08-421d-a31e-bd30acee715f")
-		(property "Sheetname" "BMS"
-			(at 125.73 38.6584 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "bms.kicad_sch"
-			(at 125.73 64.0846 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "co2_hub"
-				(path "/032ed60e-c83d-45fe-8a79-75f890542253"
-					(page "5")
-				)
-			)
-		)
-	)
-	(sheet
 		(at 60.96 45.72)
 		(size 25.4 22.86)
 		(exclude_from_sim no)
@@ -113,7 +67,7 @@
 			(color 0 0 0 0)
 		)
 		(uuid "55604b26-7348-434c-95eb-869461d7d070")
-		(property "Sheetname" "Solar"
+		(property "Sheetname" "Solar + BMS"
 			(at 189.23 48.8184 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -124,7 +78,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "solar.kicad_sch"
+		(property "Sheetfile" "solar_bms.kicad_sch"
 			(at 189.23 72.9746 0)
 			(show_name no)
 			(do_not_autoplace no)
