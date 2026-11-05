@@ -3638,6 +3638,330 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Transistor_FET:AO3401A"
+			(pin_names
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "Q"
+				(at 5.08 1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "AO3401A"
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+				(at 5.08 -1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(justify left)
+				)
+			)
+			(property "Datasheet" "http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf"
+				(at 5.08 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Description" "-4.0A Id, -30V Vds, P-Channel MOSFET, SOT-23"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "P-Channel MOSFET"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "SOT?23*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "AO3401A_0_1"
+				(polyline
+					(pts
+						(xy 0.254 1.905) (xy 0.254 -1.905)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 0) (xy -2.54 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 2.286) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 1.778) (xy 3.302 1.778) (xy 3.302 -1.778) (xy 0.762 -1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 0.508) (xy 0.762 -0.508)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -1.27) (xy 0.762 -2.286)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 1.651 0)
+					(radius 2.794)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.286 0) (xy 1.27 0.381) (xy 1.27 -0.381) (xy 2.286 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 2.54) (xy 2.54 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.54 1.778)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 2.54 -1.778)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -2.54) (xy 2.54 0) (xy 0.762 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.794 -0.508) (xy 2.921 -0.381) (xy 3.683 -0.381) (xy 3.81 -0.254)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.302 -0.381) (xy 2.921 0.254) (xy 3.683 0.254) (xy 3.302 -0.381)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "AO3401A_1_1"
+				(pin input line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "G"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(name "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 5.08 270)
+					(length 2.54)
+					(name "D"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(text "CELL_DTR has an internal pullup, and when pulled high\nputs the modem into a lower power state (a few microamps allegedly\nonce the cellular modem also goes into power saving mode on its own).\n\nCELL_RI notifies the external MCU that there's incoming data ready.\n\nhttps://nrfconnectdocs.nordicsemi.com/addons/addon-serial_modem/latest/main/uart_configuration.html"
+		(exclude_from_sim no)
+		(at 230.632 155.702 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "430d5034-7407-41e5-b31e-f17029ada061")
 	)
 	(text "The 20pF caps are for ESD protection"
 		(exclude_from_sim no)
@@ -3668,6 +3992,12 @@
 		(uuid "3b221f50-82f9-4a43-bf3c-7ac08d60d728")
 	)
 	(junction
+		(at 154.94 39.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "447c8707-702b-42c6-aedd-1396480f86ea")
+	)
+	(junction
 		(at 215.9 48.26)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3692,6 +4022,12 @@
 		(uuid "6a93071c-c3d4-4a5e-8800-e4a28c438b44")
 	)
 	(junction
+		(at 101.6 50.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "71d26cae-40e0-4a18-b420-bf99cd3a9b62")
+	)
+	(junction
 		(at 215.9 55.88)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3702,12 +4038,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8a357269-c71c-4a26-9c79-b227dbe7b515")
-	)
-	(junction
-		(at 184.15 35.56)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8b610dee-0f36-437e-aa52-d093f0e1d091")
 	)
 	(junction
 		(at 148.59 54.61)
@@ -3738,6 +4068,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e16ac5d0-d1f2-47a9-9694-e599deccf89f")
+	)
+	(junction
+		(at 167.64 27.94)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e718a079-b8bd-409f-8965-cf6691e2250a")
 	)
 	(junction
 		(at 184.15 68.58)
@@ -3791,26 +4127,6 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 83.82) (xy 109.22 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "00e40ac0-5e76-4552-a232-151a2682c7ed")
-	)
-	(wire
-		(pts
-			(xy 165.1 44.45) (xy 167.64 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "01218645-ad95-4371-a0ba-af30517dfdd0")
-	)
-	(wire
-		(pts
 			(xy 60.96 152.4) (xy 60.96 149.86)
 		)
 		(stroke
@@ -3858,6 +4174,16 @@
 			(type default)
 		)
 		(uuid "0d59f106-66cd-41a9-9a8c-66a83fc6e8cd")
+	)
+	(wire
+		(pts
+			(xy 167.64 27.94) (xy 167.64 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1447074d-7792-4c3e-83a9-4e5873653e96")
 	)
 	(wire
 		(pts
@@ -3931,6 +4257,16 @@
 	)
 	(wire
 		(pts
+			(xy 111.76 41.91) (xy 111.76 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "257cec0c-8f75-49d1-b9f9-21d04e276cf6")
+	)
+	(wire
+		(pts
 			(xy 78.74 157.48) (xy 78.74 158.75)
 		)
 		(stroke
@@ -3971,6 +4307,16 @@
 	)
 	(wire
 		(pts
+			(xy 154.94 39.37) (xy 154.94 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2f2f8dc4-fa1a-4cc7-881a-0856f9a2862b")
+	)
+	(wire
+		(pts
 			(xy 191.77 92.71) (xy 191.77 95.25)
 		)
 		(stroke
@@ -3978,6 +4324,16 @@
 			(type default)
 		)
 		(uuid "316bbec1-ced4-4c21-926a-f2074829e117")
+	)
+	(wire
+		(pts
+			(xy 165.1 22.86) (xy 167.64 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "334dba55-78a9-4cdc-9edf-eeb3ee5dad93")
 	)
 	(wire
 		(pts
@@ -4008,6 +4364,16 @@
 			(type default)
 		)
 		(uuid "3c1969c9-536a-4e79-9044-714c1c91b6cf")
+	)
+	(wire
+		(pts
+			(xy 111.76 55.88) (xy 111.76 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3eeeef03-cc2b-4f74-b4d6-2e3e6e78b9cd")
 	)
 	(wire
 		(pts
@@ -4051,6 +4417,16 @@
 	)
 	(wire
 		(pts
+			(xy 101.6 50.8) (xy 104.14 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5756d59f-7d27-4a0e-9c52-2f20792a40ca")
+	)
+	(wire
+		(pts
 			(xy 115.57 86.36) (xy 96.52 86.36)
 		)
 		(stroke
@@ -4091,6 +4467,16 @@
 	)
 	(wire
 		(pts
+			(xy 154.94 39.37) (xy 160.02 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "620572a4-3e28-4b3b-b346-53e909c215e6")
+	)
+	(wire
+		(pts
 			(xy 215.9 48.26) (xy 215.9 41.91)
 		)
 		(stroke
@@ -4098,26 +4484,6 @@
 			(type default)
 		)
 		(uuid "62bf6653-34e7-4a8d-9ea4-31b4a6bb83c9")
-	)
-	(wire
-		(pts
-			(xy 184.15 30.48) (xy 109.22 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6b6581b8-9004-4aae-9439-566c1d6fdf7b")
-	)
-	(wire
-		(pts
-			(xy 109.22 83.82) (xy 115.57 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6dd5c7dc-772a-4560-9df3-fbb3cf467ee3")
 	)
 	(wire
 		(pts
@@ -4161,13 +4527,13 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 30.48) (xy 109.22 69.85)
+			(xy 111.76 83.82) (xy 115.57 83.82)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "86bf4743-0de4-4411-95a6-8b94eccc9600")
+		(uuid "85627701-105e-41c8-ac3f-ff6a203cfe52")
 	)
 	(wire
 		(pts
@@ -4221,6 +4587,26 @@
 	)
 	(wire
 		(pts
+			(xy 101.6 40.64) (xy 101.6 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "94327592-803f-4ced-ba92-5c0bd9d3c963")
+	)
+	(wire
+		(pts
+			(xy 99.06 50.8) (xy 101.6 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "94430556-7fd8-4797-adc5-9d201bf0ccd7")
+	)
+	(wire
+		(pts
 			(xy 187.96 68.58) (xy 184.15 68.58)
 		)
 		(stroke
@@ -4238,6 +4624,16 @@
 			(type default)
 		)
 		(uuid "99ced949-dbdd-4592-9c72-7453b0a32563")
+	)
+	(wire
+		(pts
+			(xy 97.79 40.64) (xy 101.6 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9ab2325c-4f50-4533-a491-800aca7b50b5")
 	)
 	(wire
 		(pts
@@ -4278,6 +4674,16 @@
 			(type default)
 		)
 		(uuid "a76a081a-7c12-4e5b-ae9f-d2dc67c6b11b")
+	)
+	(wire
+		(pts
+			(xy 151.13 39.37) (xy 154.94 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae560d68-8b0b-4f76-a765-16d7c72bd05d")
 	)
 	(wire
 		(pts
@@ -4371,13 +4777,13 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 35.56) (xy 184.15 30.48)
+			(xy 167.64 22.86) (xy 167.64 27.94)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c55a2784-f50f-442e-a304-2bdda90b8540")
+		(uuid "c4a43d66-f42c-4f59-8d97-69254d3450b7")
 	)
 	(wire
 		(pts
@@ -4401,6 +4807,16 @@
 	)
 	(wire
 		(pts
+			(xy 154.94 30.48) (xy 154.94 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c9a9a3e6-0bc6-4a81-99b8-e48bfa7a42e0")
+	)
+	(wire
+		(pts
 			(xy 184.15 48.26) (xy 184.15 55.88)
 		)
 		(stroke
@@ -4418,6 +4834,16 @@
 			(type default)
 		)
 		(uuid "cfa58fc8-99c5-45cc-ac2a-ea8f39f8913e")
+	)
+	(wire
+		(pts
+			(xy 101.6 48.26) (xy 101.6 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d8935716-dfc4-46aa-b074-b954366f1536")
 	)
 	(wire
 		(pts
@@ -4581,6 +5007,26 @@
 	)
 	(wire
 		(pts
+			(xy 114.3 41.91) (xy 111.76 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f9f00d75-a4a8-4eb7-bfed-06d25169d164")
+	)
+	(wire
+		(pts
+			(xy 154.94 27.94) (xy 167.64 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fbdfb66c-47be-4bca-a759-d24c87fe4297")
+	)
+	(wire
+		(pts
 			(xy 167.64 50.8) (xy 162.56 50.8)
 		)
 		(stroke
@@ -4732,6 +5178,17 @@
 		)
 		(uuid "1376f8ee-569b-4dc3-aadf-7eba7ee2bd6c")
 	)
+	(hierarchical_label "~{nENABLE}"
+		(shape input)
+		(at 99.06 50.8 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "1d232871-a07f-4aee-99d4-defea6588840")
+	)
 	(hierarchical_label "GND"
 		(shape input)
 		(at 62.23 81.28 270)
@@ -4742,6 +5199,17 @@
 			(justify right)
 		)
 		(uuid "27b22b85-539a-458c-abae-ab235d9155cb")
+	)
+	(hierarchical_label "P5V0"
+		(shape input)
+		(at 114.3 41.91 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "29d2bc5c-27dd-43f7-9b06-90145a1b478d")
 	)
 	(hierarchical_label "P5V0"
 		(shape input)
@@ -4778,7 +5246,7 @@
 	)
 	(hierarchical_label "P3V3"
 		(shape input)
-		(at 165.1 44.45 180)
+		(at 165.1 22.86 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4798,7 +5266,7 @@
 		)
 		(uuid "831f2313-f408-495a-8e77-f9f01b4849e6")
 	)
-	(hierarchical_label "CELL_DTR"
+	(hierarchical_label "~{nCELL_DTR}"
 		(shape input)
 		(at 166.37 154.94 0)
 		(effects
@@ -4808,6 +5276,17 @@
 			(justify left)
 		)
 		(uuid "9782d58b-e6e6-4442-8e52-d199e15eb464")
+	)
+	(hierarchical_label "~{nVDD_GPIO_EN}"
+		(shape input)
+		(at 151.13 39.37 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "9be0a95e-e01f-4090-a47a-c0bf6183953c")
 	)
 	(hierarchical_label "GND"
 		(shape input)
@@ -4853,6 +5332,17 @@
 		)
 		(uuid "e9d3bc18-a01f-46ec-8986-b10af0d4fb91")
 	)
+	(hierarchical_label "P3V3"
+		(shape input)
+		(at 97.79 40.64 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ead6b845-fb01-4455-8d68-82225ab632c0")
+	)
 	(hierarchical_label "CELL_RX"
 		(shape input)
 		(at 115.57 147.32 180)
@@ -4863,6 +5353,105 @@
 			(justify right)
 		)
 		(uuid "efa417a8-4efc-439c-896f-c12803e652ed")
+	)
+	(symbol
+		(lib_id "Transistor_FET:AO3401A")
+		(at 109.22 50.8 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0fdee182-13f4-45cc-927e-07ae531ec62f")
+		(property "Reference" "Q3"
+			(at 115.57 49.5299 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "AO3401A"
+			(at 115.57 52.0699 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 114.3 52.705 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf"
+			(at 114.3 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" "-4.0A Id, -30V Vds, P-Channel MOSFET, SOT-23"
+			(at 109.22 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C15127"
+			(at 109.22 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "d9fe4e9d-172f-4ee6-ae33-307bcbcc8662")
+		)
+		(pin "2"
+			(uuid "26332a5f-bfa5-4517-893c-09d0ea25ef74")
+		)
+		(pin "1"
+			(uuid "7a2536b6-2ac9-4f0d-a82b-7b9983cc2a2e")
+		)
+		(instances
+			(project "co2_hub"
+				(path "/032ed60e-c83d-45fe-8a79-75f890542253/55ec85ad-7e05-4c9c-aa3d-f086fc8d1c1d"
+					(reference "Q3")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Device:C_Small")
@@ -5417,6 +6006,105 @@
 		)
 	)
 	(symbol
+		(lib_id "Transistor_FET:AO3401A")
+		(at 165.1 39.37 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "550fe3a2-5ac6-408c-a043-ce7c4131d4a7")
+		(property "Reference" "Q2"
+			(at 171.45 38.0999 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "AO3401A"
+			(at 171.45 40.6399 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 170.18 41.275 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf"
+			(at 170.18 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" "-4.0A Id, -30V Vds, P-Channel MOSFET, SOT-23"
+			(at 165.1 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C15127"
+			(at 165.1 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "75e768d6-bfff-4dfd-8e19-2834962555df")
+		)
+		(pin "2"
+			(uuid "84e2ec52-1827-4d80-a32e-1787d5c5e73b")
+		)
+		(pin "1"
+			(uuid "05de3fc4-408a-4cfb-82b8-c1f8336b5ca0")
+		)
+		(instances
+			(project "co2_hub"
+				(path "/032ed60e-c83d-45fe-8a79-75f890542253/55ec85ad-7e05-4c9c-aa3d-f086fc8d1c1d"
+					(reference "Q2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 190.5 41.91 90)
 		(unit 1)
@@ -5693,6 +6381,99 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small")
+		(at 154.94 33.02 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "74968410-8e75-427c-9341-6ed01cf6a9fd")
+		(property "Reference" "R24"
+			(at 157.48 31.7499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "150K"
+			(at 157.48 34.2899 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 154.94 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 154.94 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 154.94 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C25811"
+			(at 154.94 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "795cdc15-e835-4fa3-9914-66fffdb67133")
+		)
+		(pin "2"
+			(uuid "ac67527f-c94c-43a3-a6a2-e894e97959a0")
+		)
+		(instances
+			(project "co2_hub"
+				(path "/032ed60e-c83d-45fe-8a79-75f890542253/55ec85ad-7e05-4c9c-aa3d-f086fc8d1c1d"
+					(reference "R24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:SIM_Card_Shielded")
 		(at 36.83 157.48 180)
 		(unit 1)
@@ -5793,6 +6574,99 @@
 			(project "co2_hub"
 				(path "/032ed60e-c83d-45fe-8a79-75f890542253/55ec85ad-7e05-4c9c-aa3d-f086fc8d1c1d"
 					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 101.6 45.72 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b99941fa-19d9-4752-b35b-34092a47ad99")
+		(property "Reference" "R25"
+			(at 104.14 44.4499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "150K"
+			(at 104.14 46.9899 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 101.6 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 101.6 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 101.6 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C25811"
+			(at 101.6 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "888bbec3-9b94-4acf-9425-1f0c01137139")
+		)
+		(pin "2"
+			(uuid "aa9ac839-81e1-4ab2-a2a7-f6721ab168bb")
+		)
+		(instances
+			(project "co2_hub"
+				(path "/032ed60e-c83d-45fe-8a79-75f890542253/55ec85ad-7e05-4c9c-aa3d-f086fc8d1c1d"
+					(reference "R25")
 					(unit 1)
 				)
 			)
@@ -6639,99 +7513,6 @@
 			(project "co2_hub"
 				(path "/032ed60e-c83d-45fe-8a79-75f890542253/55ec85ad-7e05-4c9c-aa3d-f086fc8d1c1d"
 					(reference "C1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 109.22 72.39 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "edccfc04-4614-4a54-8804-7b114915ac5b")
-		(property "Reference" "R22"
-			(at 111.76 71.1199 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10K"
-			(at 111.76 73.6599 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 109.22 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 109.22 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 109.22 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C25744"
-			(at 109.22 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "f3b00eea-db42-4662-85f6-923a14fdcfc9")
-		)
-		(pin "2"
-			(uuid "c2ec2b21-87a8-4440-a296-d1d06c5cf581")
-		)
-		(instances
-			(project "co2_hub"
-				(path "/032ed60e-c83d-45fe-8a79-75f890542253/55ec85ad-7e05-4c9c-aa3d-f086fc8d1c1d"
-					(reference "R22")
 					(unit 1)
 				)
 			)

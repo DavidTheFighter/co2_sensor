@@ -884,6 +884,16 @@
 		)
 		(uuid "5837fcff-8adb-46f8-8960-cd830f4950e1")
 	)
+	(text "Inductor and output capacitor values chosen from SLVA463A sheet.\nI chose a combination that's stable and operates at 32.8 kHz so I don't have to\nhear coil whine at the limits of my hearing :)\n\nhttps://www.ti.com/lit/an/slva463a/slva463a.pdf?ts=1793591889551"
+		(exclude_from_sim no)
+		(at 154.178 107.95 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "867e795c-f1c8-4f97-881e-09ded5483584")
+	)
 	(text "The 3.3V buck is staged to bring up after the\n5.0V buck converter to satisfy the nRF9151 cell\nmodem power on sequencing."
 		(exclude_from_sim no)
 		(at 74.93 89.408 0)
@@ -893,12 +903,6 @@
 			)
 		)
 		(uuid "f8513d81-6a40-45d6-b56c-024710b70146")
-	)
-	(junction
-		(at 241.3 55.88)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0e0ae4b4-328e-4d28-8295-2ea5e6327455")
 	)
 	(junction
 		(at 128.27 54.61)
@@ -965,12 +969,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "63c1b18b-308f-4250-8346-6bf8853f331a")
-	)
-	(junction
-		(at 233.68 80.01)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "74f81a8a-c46b-4ad3-b22a-60a5fa37ecfa")
 	)
 	(junction
 		(at 170.18 80.01)
@@ -1067,16 +1065,6 @@
 			(type default)
 		)
 		(uuid "05620d92-9028-453a-904c-2cc12d5e3e95")
-	)
-	(wire
-		(pts
-			(xy 233.68 80.01) (xy 241.3 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "05740596-50f9-4079-98da-915a1e07db1b")
 	)
 	(wire
 		(pts
@@ -1210,7 +1198,7 @@
 	)
 	(wire
 		(pts
-			(xy 233.68 55.88) (xy 241.3 55.88)
+			(xy 233.68 55.88) (xy 248.92 55.88)
 		)
 		(stroke
 			(width 0)
@@ -1380,26 +1368,6 @@
 	)
 	(wire
 		(pts
-			(xy 241.3 80.01) (xy 241.3 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6e77b326-dd9d-442d-9702-5cfe5ed1d788")
-	)
-	(wire
-		(pts
-			(xy 241.3 55.88) (xy 241.3 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6fb012a6-7935-4ace-b4f5-dd089cccddc4")
-	)
-	(wire
-		(pts
 			(xy 248.92 53.34) (xy 248.92 55.88)
 		)
 		(stroke
@@ -1417,16 +1385,6 @@
 			(type default)
 		)
 		(uuid "76012cab-3b7a-4f69-8f47-c2cdc7441f56")
-	)
-	(wire
-		(pts
-			(xy 241.3 55.88) (xy 248.92 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7cd39b86-7077-46a1-ada1-ab33b3fe2000")
 	)
 	(wire
 		(pts
@@ -2333,7 +2291,7 @@
 				)
 			)
 		)
-		(property "Value" "TBD"
+		(property "Value" "4.7uH"
 			(at 97.79 52.07 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2376,7 +2334,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C5832376"
+		(property "LCSC" "C6807738"
 			(at 97.79 54.61 90)
 			(hide yes)
 			(show_name no)
@@ -2397,98 +2355,6 @@
 			(project "co2_hub"
 				(path "/032ed60e-c83d-45fe-8a79-75f890542253/3dab47bd-f169-4f09-a581-2ec0e2e7cd73"
 					(reference "L1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 241.3 63.5 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "56a629a2-05c5-4fa9-9c33-8e9b86ea4f45")
-		(property "Reference" "C11"
-			(at 242.316 61.722 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10uF"
-			(at 242.316 65.532 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 241.3 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 241.3 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 241.3 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C15850"
-			(at 241.3 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "8ad164a0-dc4e-486e-9be0-3521c9bc6f8c")
-		)
-		(pin "2"
-			(uuid "9b32dc4a-11cc-4677-98cf-b89c5c5d0922")
-		)
-		(instances
-			(project "co2_hub"
-				(path "/032ed60e-c83d-45fe-8a79-75f890542253/3dab47bd-f169-4f09-a581-2ec0e2e7cd73"
-					(reference "C11")
 					(unit 1)
 				)
 			)
@@ -2516,7 +2382,7 @@
 				)
 			)
 		)
-		(property "Value" "TBD"
+		(property "Value" "4.7uH"
 			(at 218.44 53.34 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2559,7 +2425,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C5832376"
+		(property "LCSC" "C6807738"
 			(at 218.44 55.88 90)
 			(hide yes)
 			(show_name no)
@@ -2580,99 +2446,6 @@
 			(project "co2_hub"
 				(path "/032ed60e-c83d-45fe-8a79-75f890542253/3dab47bd-f169-4f09-a581-2ec0e2e7cd73"
 					(reference "L2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 116.84 63.5 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7e474562-5c70-483b-9184-c9b45e90cf57")
-		(property "Reference" "C8"
-			(at 119.38 62.2362 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10uF"
-			(at 119.38 64.7762 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 116.84 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 116.84 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 116.84 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C15850"
-			(at 116.84 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "5d567c37-7d84-45de-8b58-40e8deaf8986")
-		)
-		(pin "2"
-			(uuid "2df93173-b68f-45e5-b542-96c58d23bf9d")
-		)
-		(instances
-			(project "co2_hub"
-				(path "/032ed60e-c83d-45fe-8a79-75f890542253/3dab47bd-f169-4f09-a581-2ec0e2e7cd73"
-					(reference "C8")
 					(unit 1)
 				)
 			)
@@ -3063,6 +2836,98 @@
 			(project "co2_hub"
 				(path "/032ed60e-c83d-45fe-8a79-75f890542253/3dab47bd-f169-4f09-a581-2ec0e2e7cd73"
 					(reference "U8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 116.84 63.5 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "bb2b9da3-bd03-4bf6-99e9-9795b9758c27")
+		(property "Reference" "C35"
+			(at 117.602 61.468 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10uF"
+			(at 117.602 65.532 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 116.84 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 116.84 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 116.84 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C15850"
+			(at 116.84 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "de2344c4-332d-4b6c-8753-b1e9c6a892a7")
+		)
+		(pin "2"
+			(uuid "3d515da6-7de9-4a32-89f0-9ea909fa0902")
+		)
+		(instances
+			(project "co2_hub"
+				(path "/032ed60e-c83d-45fe-8a79-75f890542253/3dab47bd-f169-4f09-a581-2ec0e2e7cd73"
+					(reference "C35")
 					(unit 1)
 				)
 			)
