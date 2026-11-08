@@ -2144,6 +2144,331 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Transistor_FET:2N7002"
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "Q"
+				(at 5.08 1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "2N7002"
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+				(at 5.08 -1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(justify left)
+				)
+			)
+			(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
+				(at 5.08 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Description" "0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "N-Channel Switching MOSFET"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "SOT?23*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "2N7002_0_1"
+				(polyline
+					(pts
+						(xy 0.254 1.905) (xy 0.254 -1.905)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 0) (xy -2.54 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 2.286) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 0.508) (xy 0.762 -0.508)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -1.27) (xy 0.762 -2.286)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -1.778) (xy 3.302 -1.778) (xy 3.302 1.778) (xy 0.762 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 0) (xy 2.032 0.381) (xy 2.032 -0.381) (xy 1.016 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 1.651 0)
+					(radius 2.794)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 2.54) (xy 2.54 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.54 1.778)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 2.54 -1.778)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -2.54) (xy 2.54 0) (xy 0.762 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.921 0.381) (xy 3.683 0.381)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.302 0.381) (xy 2.921 -0.254) (xy 3.683 -0.254) (xy 3.302 0.381)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "2N7002_1_1"
+				(pin input line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "G"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(name "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 5.08 270)
+					(length 2.54)
+					(name "D"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(text "I put a MOSFET here so we only\ndraw current through the pull-down\nresistors when the MCU is reading\nthem. Each line draws 33uA but the\n2N7002 has a leakage current at max\n160 nA."
+		(exclude_from_sim no)
+		(at 48.768 139.954 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "3802d48e-23c6-4c1d-af1a-c76535eb077b")
 	)
 	(text "BOOT0 pulled high to\nboot from flash"
 		(exclude_from_sim no)
@@ -2232,6 +2557,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6d187e39-4153-4c2c-a3b8-d6846d94a862")
+	)
+	(junction
+		(at 53.34 107.95)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6f723f6e-4fef-4e40-88bb-fe12e2dd4543")
 	)
 	(junction
 		(at 156.21 87.63)
@@ -2342,12 +2673,6 @@
 		(uuid "d8fdee6a-87dd-46c5-a354-da644417aae3")
 	)
 	(junction
-		(at 53.34 100.33)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e15b9e34-3f11-4052-acc1-3407e937a29e")
-	)
-	(junction
 		(at 53.34 102.87)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2372,10 +2697,6 @@
 	(no_connect
 		(at 113.03 77.47)
 		(uuid "5542dd4c-64a8-4e40-9a1d-2d86c3c3c401")
-	)
-	(no_connect
-		(at 113.03 85.09)
-		(uuid "7f8f1302-1e73-4501-9015-ee08333f285a")
 	)
 	(no_connect
 		(at 138.43 77.47)
@@ -2619,6 +2940,16 @@
 	)
 	(wire
 		(pts
+			(xy 39.37 91.44) (xy 39.37 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3b9cb2f9-33ff-40ce-9bb2-233ccbd5bcf1")
+	)
+	(wire
+		(pts
 			(xy 83.82 121.92) (xy 83.82 116.84)
 		)
 		(stroke
@@ -2789,6 +3120,16 @@
 	)
 	(wire
 		(pts
+			(xy 72.39 85.09) (xy 72.39 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "701e470c-c144-4b7e-b17c-dec8b30d316f")
+	)
+	(wire
+		(pts
 			(xy 119.38 55.88) (xy 119.38 49.53)
 		)
 		(stroke
@@ -2916,6 +3257,16 @@
 			(type default)
 		)
 		(uuid "867bcf46-8e6f-4b47-a717-f27010074fad")
+	)
+	(wire
+		(pts
+			(xy 49.53 107.95) (xy 49.53 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "894a99e2-0906-4d53-b380-44cdbc8fb534")
 	)
 	(wire
 		(pts
@@ -3059,16 +3410,6 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 100.33) (xy 53.34 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a781174b-9557-4181-a3d9-345bcd696fde")
-	)
-	(wire
-		(pts
 			(xy 128.27 55.88) (xy 134.62 55.88)
 		)
 		(stroke
@@ -3179,6 +3520,16 @@
 	)
 	(wire
 		(pts
+			(xy 113.03 85.09) (xy 72.39 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c24f4d80-edac-43ca-872c-0b892f0a1990")
+	)
+	(wire
+		(pts
 			(xy 72.39 121.92) (xy 74.93 121.92)
 		)
 		(stroke
@@ -3239,6 +3590,16 @@
 	)
 	(wire
 		(pts
+			(xy 53.34 107.95) (xy 49.53 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d02ef0a9-1072-4f0e-8b1f-001642023645")
+	)
+	(wire
+		(pts
 			(xy 171.45 107.95) (xy 167.64 107.95)
 		)
 		(stroke
@@ -3246,6 +3607,16 @@
 			(type default)
 		)
 		(uuid "d555a48c-6632-4aa0-8ad4-7ad12cbff350")
+	)
+	(wire
+		(pts
+			(xy 49.53 123.19) (xy 49.53 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d91b4620-5b66-447e-bfd0-fee55ee0e5cc")
 	)
 	(wire
 		(pts
@@ -3286,6 +3657,16 @@
 			(type default)
 		)
 		(uuid "e44532ed-cf93-4166-b88c-d4da8859417a")
+	)
+	(wire
+		(pts
+			(xy 39.37 118.11) (xy 41.91 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e5850374-cef5-47dc-882a-bcd47fc2472b")
 	)
 	(wire
 		(pts
@@ -3366,6 +3747,16 @@
 			(type default)
 		)
 		(uuid "f91725d5-07c4-4792-b680-54c11378f17c")
+	)
+	(wire
+		(pts
+			(xy 72.39 91.44) (xy 39.37 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f9622949-5e7d-4da4-870a-dfce5f92af75")
 	)
 	(wire
 		(pts
@@ -3568,7 +3959,7 @@
 	)
 	(hierarchical_label "GND"
 		(shape input)
-		(at 50.8 100.33 180)
+		(at 49.53 125.73 270)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4989,6 +5380,94 @@
 			(project "co2_sensor_module"
 				(path "/58639344-3050-41c9-a876-6afa82650aa6/0855eb91-09c9-44ec-a92e-6b9e695015ee"
 					(reference "C20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_FET:2N7002")
+		(at 46.99 118.11 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "885e0301-544d-411d-98ba-eee811e0dea2")
+		(property "Reference" "Q2"
+			(at 53.34 116.8399 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2N7002"
+			(at 53.34 119.3799 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 52.07 120.015 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
+			(at 52.07 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" "0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"
+			(at 46.99 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "8b81e64b-84fc-4576-a14b-4190f042b8fa")
+		)
+		(pin "2"
+			(uuid "5012e26a-07f9-47f1-8e8b-b7ec2ebe82ad")
+		)
+		(pin "1"
+			(uuid "ce2245b4-654b-4d87-98c3-ab3bc43c98ff")
+		)
+		(instances
+			(project "co2_sensor_module"
+				(path "/58639344-3050-41c9-a876-6afa82650aa6/0855eb91-09c9-44ec-a92e-6b9e695015ee"
+					(reference "Q2")
 					(unit 1)
 				)
 			)

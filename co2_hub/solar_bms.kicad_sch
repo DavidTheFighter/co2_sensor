@@ -719,7 +719,7 @@
 				)
 			)
 			(property "Footprint" "SO-8_INF"
-				(at 0 0 0)
+				(at 13.208 11.938 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -731,7 +731,7 @@
 				)
 			)
 			(property "Datasheet" "https://www.infineon.com/dgdl/irf9310pbf.pdf?fileId=5546d462533600a4015356110a7d1d95"
-				(at 0 0 0)
+				(at 12.954 15.24 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -1331,7 +1331,9 @@
 						(type none)
 					)
 				)
-				(pin unspecified line
+			)
+			(symbol "IRF9310PBF_1_1"
+				(pin passive line
 					(at 0 0 0)
 					(length 7.62)
 					(name "1"
@@ -1349,7 +1351,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at 0 -2.54 0)
 					(length 7.62)
 					(name "2"
@@ -1367,7 +1369,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at 0 -5.08 0)
 					(length 7.62)
 					(name "3"
@@ -1385,7 +1387,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin input line
 					(at 0 -7.62 0)
 					(length 7.62)
 					(name "4"
@@ -1403,7 +1405,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at 30.48 -7.62 180)
 					(length 7.62)
 					(name "5"
@@ -1421,7 +1423,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at 30.48 -5.08 180)
 					(length 7.62)
 					(name "6"
@@ -1439,7 +1441,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at 30.48 -2.54 180)
 					(length 7.62)
 					(name "7"
@@ -1457,7 +1459,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at 30.48 0 180)
 					(length 7.62)
 					(name "8"
@@ -1536,7 +1538,7 @@
 				)
 			)
 			(property "Description" "Unpolarized capacitor, small symbol"
-				(at 0 0 0)
+				(at 0 -10.16 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -1586,7 +1588,7 @@
 						(xy -1.524 -0.508) (xy 1.524 -0.508)
 					)
 					(stroke
-						(width 0.3302)
+						(width 0.3048)
 						(type default)
 					)
 					(fill
@@ -3068,7 +3070,7 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "Standby powers of the always-on components:\n- HT75xx -> 50 uW max\n- TLV7031 -> 3 uW max\n- REF35125 -> 10 uW max\n- IRF9310 -> 60 uW max (drain/source leakage + gate/source leakage)\n- Voltage divider -> 150 uW max\n- 2N7002 -> laughably small\n\nTotal -> 273 uW"
+	(text "Standby powers of the always-on components:\n- HT75xx -> 50 uW max\n- TLV7031 -> 3 uW max\n- REF35125 -> 10 uW max\n- IRF9310 -> 60 uW max (drain/source + gate/source leakage)\n- Voltage divider -> 150 uW max\n- 2N7002 -> laughably small\n\nTotal -> 273 uW"
 		(exclude_from_sim no)
 		(at 55.626 61.722 0)
 		(effects
@@ -3077,16 +3079,6 @@
 			)
 		)
 		(uuid "10ee6d01-623f-4c52-8b04-a75ff8ef8198")
-	)
-	(text "Using the 3.3V version"
-		(exclude_from_sim no)
-		(at 215.9 20.574 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "1149f147-fc8e-4fd4-aa84-4dbf3ac8e146")
 	)
 	(text "Comparator with hysteresis for low battery cutoff.\nCut off voltage V_off = 12.5V, turn on voltage V_on = 12.8V\nV_ref = 1.25V, R_top = 914K, R_bot = 100K, R_H = 13.3M\nThe TLV7031 has an internal hysteresis V_ihys = 7mV\n\nG = 1 + R_top/R_bot + R_top/R_H = 10.209\nV_on = (V_ref + V_ihys/2) * G = 12.797V\nV_off = (V_ref - V_ihys/2) * G - 3.3 * (R_top / R_H) = 12.499V\n\nTolerance stackup seem like the turn off offset can be +/- 80mV"
 		(exclude_from_sim no)
@@ -3191,12 +3183,6 @@
 		(uuid "20165fb1-a1aa-4a0b-a3cd-d5d96f39f06a")
 	)
 	(junction
-		(at 232.41 29.21)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "21eaf597-96a8-4b1c-97d7-60381e4bec7b")
-	)
-	(junction
 		(at 166.37 115.57)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3225,6 +3211,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3c2f8c27-b0ee-4f64-9ed7-776b04010d87")
+	)
+	(junction
+		(at 232.41 29.21)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3c9ea55f-ed2f-40ef-aeae-a4446c5877f8")
 	)
 	(junction
 		(at 232.41 71.12)
@@ -3263,10 +3255,10 @@
 		(uuid "779ad309-2d96-4f48-9ca5-a58225f7f77b")
 	)
 	(junction
-		(at 187.96 115.57)
+		(at 195.58 57.15)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "87bbe52c-26e9-4ede-b1a9-9339daaaad37")
+		(uuid "881d4b56-4a57-4dbd-88fe-549168867cf2")
 	)
 	(junction
 		(at 107.95 96.52)
@@ -3329,6 +3321,12 @@
 		(uuid "dc2a7a3c-00af-4007-b4ec-596edd783b8f")
 	)
 	(junction
+		(at 187.96 115.57)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dcc175f6-65d7-439d-9691-408db054ddb4")
+	)
+	(junction
 		(at 195.58 66.04)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3352,6 +3350,10 @@
 		(color 0 0 0 0)
 		(uuid "ef8001b4-1d1f-402b-bcb1-5e4aadefa7fc")
 	)
+	(no_connect
+		(at 123.19 72.39)
+		(uuid "abbebdb8-0342-4760-813f-17b6369b9b5a")
+	)
 	(wire
 		(pts
 			(xy 210.82 29.21) (xy 214.63 29.21)
@@ -3374,7 +3376,7 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 96.52) (xy 62.23 96.52)
+			(xy 58.42 96.52) (xy 74.93 96.52)
 		)
 		(stroke
 			(width 0)
@@ -3674,16 +3676,6 @@
 	)
 	(wire
 		(pts
-			(xy 232.41 29.21) (xy 232.41 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3446bb35-d7b1-494a-b8bd-8e2d6b650e5c")
-	)
-	(wire
-		(pts
 			(xy 153.67 144.78) (xy 153.67 146.05)
 		)
 		(stroke
@@ -3864,6 +3856,16 @@
 	)
 	(wire
 		(pts
+			(xy 232.41 29.21) (xy 232.41 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4dd0a87e-cc64-4e3f-8bc7-0bd94999b7b4")
+	)
+	(wire
+		(pts
 			(xy 162.56 137.16) (xy 166.37 137.16)
 		)
 		(stroke
@@ -3944,6 +3946,16 @@
 	)
 	(wire
 		(pts
+			(xy 232.41 53.34) (xy 195.58 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5e468901-f824-4072-b91e-fdb89270d5dc")
+	)
+	(wire
+		(pts
 			(xy 166.37 137.16) (xy 187.96 137.16)
 		)
 		(stroke
@@ -3971,16 +3983,6 @@
 			(type default)
 		)
 		(uuid "67658599-02d9-4168-ab84-2f5fffe1d29f")
-	)
-	(wire
-		(pts
-			(xy 67.31 96.52) (xy 74.93 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6a9c8368-243d-457b-8b47-b2fe0577c013")
 	)
 	(wire
 		(pts
@@ -4104,6 +4106,16 @@
 	)
 	(wire
 		(pts
+			(xy 195.58 53.34) (xy 195.58 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7de7b417-54fa-4480-b7fd-23ba3f0312d9")
+	)
+	(wire
+		(pts
 			(xy 165.1 29.21) (xy 165.1 31.75)
 		)
 		(stroke
@@ -4171,16 +4183,6 @@
 			(type default)
 		)
 		(uuid "8ea126cc-8a9c-42cc-8268-3d3a5fe894f6")
-	)
-	(wire
-		(pts
-			(xy 187.96 71.12) (xy 187.96 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "90ff8c4c-1f5a-45c3-8842-e9a2852dc925")
 	)
 	(wire
 		(pts
@@ -4401,6 +4403,16 @@
 			(type default)
 		)
 		(uuid "b71e4a64-0ec7-40c4-9f9b-b6568cfa7890")
+	)
+	(wire
+		(pts
+			(xy 187.96 71.12) (xy 187.96 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b8b3d8f3-aae1-467f-bd5f-b513da4ce7b4")
 	)
 	(wire
 		(pts
@@ -4794,7 +4806,7 @@
 		)
 		(uuid "097020c4-f856-4974-8660-bba4f17302fa")
 	)
-	(hierarchical_label "BAT_POS"
+	(hierarchical_label "Vbat"
 		(shape input)
 		(at 191.77 151.13 0)
 		(effects
@@ -5399,97 +5411,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D_Schottky_Small")
-		(at 64.77 96.52 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4a1968fa-e06a-4bba-ab51-a830b4561426")
-		(property "Reference" "D6"
-			(at 65.024 90.17 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "40V 550mV@5A"
-			(at 65.024 92.71 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SMA"
-			(at 64.77 96.52 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 64.77 96.52 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Schottky diode, small symbol"
-			(at 64.77 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C22452"
-			(at 64.77 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "55dba359-39f8-45b9-bf28-b1e17d3cc82d")
-		)
-		(pin "1"
-			(uuid "43b9b73c-c3b7-4b89-adf1-3ac80283a826")
-		)
-		(instances
-			(project "co2_hub"
-				(path "/032ed60e-c83d-45fe-8a79-75f890542253/55604b26-7348-434c-95eb-869461d7d070"
-					(reference "D6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "CustomSymbols:IRF9310PBF")
 		(at 199.39 66.04 0)
 		(unit 1)
@@ -5521,7 +5442,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:Infineon_PG-DSO-8-24_4x5mm"
+		(property "Footprint" "Package_SO:SO-8_3.9x4.9mm_P1.27mm"
 			(at 199.39 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -7228,7 +7149,7 @@
 				)
 			)
 		)
-		(property "Value" "HT75xx-1-SOT89"
+		(property "Value" "HT7533-1-SOT89"
 			(at 203.2 24.13 0)
 			(show_name no)
 			(do_not_autoplace no)

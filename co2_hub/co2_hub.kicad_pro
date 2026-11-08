@@ -28,7 +28,16 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [],
+    "erc_exclusions": [
+      [
+        "pin_to_pin|1143000|1308100|18113e9c-111f-4228-8c1b-6f0c02238b77|5678cd22-075d-4660-83a2-0506dd1ec235|/032ed60e-c83d-45fe-8a79-75f890542253/55604b26-7348-434c-95eb-869461d7d070|/032ed60e-c83d-45fe-8a79-75f890542253/55604b26-7348-434c-95eb-869461d7d070|/032ed60e-c83d-45fe-8a79-75f890542253",
+        "This is fine for this chip, the datasheet says to pull to ground if unused"
+      ],
+      [
+        "pin_to_pin|1397000|1257300|0a49aa51-3252-4265-9656-92de448ccbeb|87d3f2ec-d808-4198-826c-19ce8e952e2d|/032ed60e-c83d-45fe-8a79-75f890542253/55604b26-7348-434c-95eb-869461d7d070|/032ed60e-c83d-45fe-8a79-75f890542253/55604b26-7348-434c-95eb-869461d7d070|/032ed60e-c83d-45fe-8a79-75f890542253/c1e548af-c5ed-4c0e-9d3e-60fddc2d6f76",
+        "BAT is an output to charge the battery"
+      ]
+    ],
     "meta": {
       "version": 0
     },
@@ -432,7 +441,7 @@
         "uuid": "032ed60e-c83d-45fe-8a79-75f890542253"
       }
     ],
-    "used_designators": "#FLG1-3,#PWR1-2,C1-32,D1-5,FB1,J1-5,L1-4,Q2-3,R1,R5-6,R8-9,R17-22,R24-26,U1-10,Y1",
+    "used_designators": "#FLG1-9,#PWR1-2,C1-32,C38-42,D1-6,F1,FB1,J1-9,JP1,L1-4,MOSFET2,Q2-3,R1,R5-6,R8-9,R15-22,R24-32,U1-10,U13,Y1",
     "variants": []
   },
   "sheets": [
@@ -453,12 +462,20 @@
       "Power"
     ],
     [
+      "d78b6e39-2275-4a45-8587-f5e83ecc40b8",
+      "CAN"
+    ],
+    [
       "55604b26-7348-434c-95eb-869461d7d070",
       "Solar + BMS"
     ],
     [
       "55ec85ad-7e05-4c9c-aa3d-f086fc8d1c1d",
       "cell"
+    ],
+    [
+      "c1e548af-c5ed-4c0e-9d3e-60fddc2d6f76",
+      "Reverse Polarity Protection"
     ]
   ],
   "text_variables": {},

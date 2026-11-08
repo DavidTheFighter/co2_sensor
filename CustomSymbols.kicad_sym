@@ -207,7 +207,7 @@
 			)
 		)
 		(property "Footprint" "SO-8_INF"
-			(at 0 0 0)
+			(at 13.208 11.938 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -219,7 +219,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.infineon.com/dgdl/irf9310pbf.pdf?fileId=5546d462533600a4015356110a7d1d95"
-			(at 0 0 0)
+			(at 12.954 15.24 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -819,7 +819,9 @@
 					(type none)
 				)
 			)
-			(pin unspecified line
+		)
+		(symbol "IRF9310PBF_1_1"
+			(pin passive line
 				(at 0 0 0)
 				(length 7.62)
 				(name "1"
@@ -837,7 +839,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at 0 -2.54 0)
 				(length 7.62)
 				(name "2"
@@ -855,7 +857,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at 0 -5.08 0)
 				(length 7.62)
 				(name "3"
@@ -873,7 +875,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin input line
 				(at 0 -7.62 0)
 				(length 7.62)
 				(name "4"
@@ -891,7 +893,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at 30.48 -7.62 180)
 				(length 7.62)
 				(name "5"
@@ -909,7 +911,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at 30.48 -5.08 180)
 				(length 7.62)
 				(name "6"
@@ -927,7 +929,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at 30.48 -2.54 180)
 				(length 7.62)
 				(name "7"
@@ -945,7 +947,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at 30.48 0 180)
 				(length 7.62)
 				(name "8"
@@ -1178,8 +1180,8 @@
 		)
 		(symbol "NRF9151-LACA-R7_1_0"
 			(rectangle
-				(start -20.32 -45.72)
-				(end 20.32 45.72)
+				(start -20.32 45.72)
+				(end 20.32 -45.72)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -1440,7 +1442,7 @@
 					)
 				)
 			)
-			(pin power_in line
+			(pin power_out line
 				(at 25.4 38.1 180)
 				(length 5.08)
 				(name "SIM_1V8"
@@ -1512,7 +1514,7 @@
 					)
 				)
 			)
-			(pin power_in line
+			(pin power_out line
 				(at 25.4 33.02 180)
 				(length 5.08)
 				(name "DEC0"
@@ -2212,7 +2214,7 @@
 			(pin power_in line
 				(at 20.32 0 180)
 				(length 5.08)
-				(name "GND_1"
+				(name "GND"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -2231,7 +2233,7 @@
 				(at 20.32 0 180)
 				(length 5.08)
 				(hide yes)
-				(name "GND_1"
+				(name "GND"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -2250,7 +2252,7 @@
 				(at 20.32 0 180)
 				(length 5.08)
 				(hide yes)
-				(name "GND_1"
+				(name "GND"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -2269,7 +2271,7 @@
 				(at 20.32 0 180)
 				(length 5.08)
 				(hide yes)
-				(name "GND_1"
+				(name "GND"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -2288,7 +2290,7 @@
 				(at 20.32 0 180)
 				(length 5.08)
 				(hide yes)
-				(name "GND_1"
+				(name "GND"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -2307,7 +2309,7 @@
 				(at 20.32 0 180)
 				(length 5.08)
 				(hide yes)
-				(name "GND_1"
+				(name "GND"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -2326,7 +2328,7 @@
 				(at 20.32 0 180)
 				(length 5.08)
 				(hide yes)
-				(name "GND_1"
+				(name "GND"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -2401,7 +2403,7 @@
 				(at 20.32 0 180)
 				(length 5.08)
 				(hide yes)
-				(name "GND_1"
+				(name "GND"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -2420,7 +2422,7 @@
 				(at 20.32 0 180)
 				(length 5.08)
 				(hide yes)
-				(name "GND_1"
+				(name "GND"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -2439,7 +2441,7 @@
 				(at 20.32 0 180)
 				(length 5.08)
 				(hide yes)
-				(name "GND_1"
+				(name "GND"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -2458,7 +2460,7 @@
 				(at 20.32 0 180)
 				(length 5.08)
 				(hide yes)
-				(name "GND_1"
+				(name "GND"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -2477,7 +2479,7 @@
 				(at 20.32 0 180)
 				(length 5.08)
 				(hide yes)
-				(name "GND_1"
+				(name "GND"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -2496,7 +2498,7 @@
 				(at 20.32 0 180)
 				(length 5.08)
 				(hide yes)
-				(name "GND_1"
+				(name "GND"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -2515,7 +2517,7 @@
 				(at 20.32 0 180)
 				(length 5.08)
 				(hide yes)
-				(name "GND_1"
+				(name "GND"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -2534,7 +2536,7 @@
 				(at 20.32 0 180)
 				(length 5.08)
 				(hide yes)
-				(name "GND_1"
+				(name "GND"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -2552,7 +2554,7 @@
 			(pin power_in line
 				(at 20.32 -2.54 180)
 				(length 5.08)
-				(name "GND_2"
+				(name "GND"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -2571,7 +2573,7 @@
 				(at 20.32 -2.54 180)
 				(length 5.08)
 				(hide yes)
-				(name "GND_2"
+				(name "GND"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -2590,7 +2592,7 @@
 				(at 20.32 -2.54 180)
 				(length 5.08)
 				(hide yes)
-				(name "GND_2"
+				(name "GND"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -2609,7 +2611,7 @@
 				(at 20.32 -2.54 180)
 				(length 5.08)
 				(hide yes)
-				(name "GND_2"
+				(name "GND"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -2628,7 +2630,7 @@
 				(at 20.32 -2.54 180)
 				(length 5.08)
 				(hide yes)
-				(name "GND_2"
+				(name "GND"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -2647,7 +2649,7 @@
 				(at 20.32 -2.54 180)
 				(length 5.08)
 				(hide yes)
-				(name "GND_2"
+				(name "GND"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -3121,7 +3123,7 @@
 				(at 20.32 -2.54 180)
 				(length 5.08)
 				(hide yes)
-				(name "GND_2"
+				(name "GND"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -3140,7 +3142,7 @@
 				(at 20.32 -2.54 180)
 				(length 5.08)
 				(hide yes)
-				(name "GND_2"
+				(name "GND"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -3159,7 +3161,7 @@
 				(at 20.32 -2.54 180)
 				(length 5.08)
 				(hide yes)
-				(name "GND_2"
+				(name "GND"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -3178,7 +3180,7 @@
 				(at 20.32 -2.54 180)
 				(length 5.08)
 				(hide yes)
-				(name "GND_2"
+				(name "GND"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -3197,7 +3199,7 @@
 				(at 20.32 -2.54 180)
 				(length 5.08)
 				(hide yes)
-				(name "GND_2"
+				(name "GND"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -3216,7 +3218,7 @@
 				(at 20.32 -2.54 180)
 				(length 5.08)
 				(hide yes)
-				(name "GND_2"
+				(name "GND"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -3235,7 +3237,7 @@
 				(at 20.32 -2.54 180)
 				(length 5.08)
 				(hide yes)
-				(name "GND_2"
+				(name "GND"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -3254,7 +3256,7 @@
 				(at 20.32 -2.54 180)
 				(length 5.08)
 				(hide yes)
-				(name "GND_2"
+				(name "GND"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -3273,7 +3275,7 @@
 				(at 20.32 -2.54 180)
 				(length 5.08)
 				(hide yes)
-				(name "GND_2"
+				(name "GND"
 					(effects
 						(font
 							(size 1.016 1.016)
