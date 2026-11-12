@@ -1180,8 +1180,8 @@
 		)
 		(symbol "NRF9151-LACA-R7_1_0"
 			(rectangle
-				(start -20.32 -45.72)
-				(end 20.32 45.72)
+				(start -20.32 45.72)
+				(end 20.32 -45.72)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -2233,7 +2233,7 @@
 				(at 20.32 0 180)
 				(length 5.08)
 				(hide yes)
-				(name "GND_1"
+				(name "GND"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -2252,7 +2252,7 @@
 				(at 20.32 0 180)
 				(length 5.08)
 				(hide yes)
-				(name "GND_1"
+				(name "GND"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -2271,7 +2271,7 @@
 				(at 20.32 0 180)
 				(length 5.08)
 				(hide yes)
-				(name "GND_1"
+				(name "GND"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -2290,7 +2290,7 @@
 				(at 20.32 0 180)
 				(length 5.08)
 				(hide yes)
-				(name "GND_1"
+				(name "GND"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -2309,7 +2309,7 @@
 				(at 20.32 0 180)
 				(length 5.08)
 				(hide yes)
-				(name "GND_1"
+				(name "GND"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -2328,7 +2328,7 @@
 				(at 20.32 0 180)
 				(length 5.08)
 				(hide yes)
-				(name "GND_1"
+				(name "GND"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -2403,7 +2403,7 @@
 				(at 20.32 0 180)
 				(length 5.08)
 				(hide yes)
-				(name "GND_1"
+				(name "GND"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -2422,7 +2422,7 @@
 				(at 20.32 0 180)
 				(length 5.08)
 				(hide yes)
-				(name "GND_1"
+				(name "GND"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -2441,7 +2441,7 @@
 				(at 20.32 0 180)
 				(length 5.08)
 				(hide yes)
-				(name "GND_1"
+				(name "GND"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -2460,7 +2460,7 @@
 				(at 20.32 0 180)
 				(length 5.08)
 				(hide yes)
-				(name "GND_1"
+				(name "GND"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -2479,7 +2479,7 @@
 				(at 20.32 0 180)
 				(length 5.08)
 				(hide yes)
-				(name "GND_1"
+				(name "GND"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -2498,7 +2498,7 @@
 				(at 20.32 0 180)
 				(length 5.08)
 				(hide yes)
-				(name "GND_1"
+				(name "GND"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -2517,7 +2517,7 @@
 				(at 20.32 0 180)
 				(length 5.08)
 				(hide yes)
-				(name "GND_1"
+				(name "GND"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -2536,7 +2536,7 @@
 				(at 20.32 0 180)
 				(length 5.08)
 				(hide yes)
-				(name "GND_1"
+				(name "GND"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -2573,7 +2573,7 @@
 				(at 20.32 -2.54 180)
 				(length 5.08)
 				(hide yes)
-				(name "GND_2"
+				(name "GND"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -2592,7 +2592,7 @@
 				(at 20.32 -2.54 180)
 				(length 5.08)
 				(hide yes)
-				(name "GND_2"
+				(name "GND"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -2611,7 +2611,7 @@
 				(at 20.32 -2.54 180)
 				(length 5.08)
 				(hide yes)
-				(name "GND_2"
+				(name "GND"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -2630,7 +2630,7 @@
 				(at 20.32 -2.54 180)
 				(length 5.08)
 				(hide yes)
-				(name "GND_2"
+				(name "GND"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -2649,7 +2649,7 @@
 				(at 20.32 -2.54 180)
 				(length 5.08)
 				(hide yes)
-				(name "GND_2"
+				(name "GND"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -3123,7 +3123,7 @@
 				(at 20.32 -2.54 180)
 				(length 5.08)
 				(hide yes)
-				(name "GND_2"
+				(name "GND"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -3142,7 +3142,7 @@
 				(at 20.32 -2.54 180)
 				(length 5.08)
 				(hide yes)
-				(name "GND_2"
+				(name "GND"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -3161,7 +3161,7 @@
 				(at 20.32 -2.54 180)
 				(length 5.08)
 				(hide yes)
-				(name "GND_2"
+				(name "GND"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -3180,7 +3180,7 @@
 				(at 20.32 -2.54 180)
 				(length 5.08)
 				(hide yes)
-				(name "GND_2"
+				(name "GND"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -3199,7 +3199,7 @@
 				(at 20.32 -2.54 180)
 				(length 5.08)
 				(hide yes)
-				(name "GND_2"
+				(name "GND"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -3218,7 +3218,7 @@
 				(at 20.32 -2.54 180)
 				(length 5.08)
 				(hide yes)
-				(name "GND_2"
+				(name "GND"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -3237,7 +3237,7 @@
 				(at 20.32 -2.54 180)
 				(length 5.08)
 				(hide yes)
-				(name "GND_2"
+				(name "GND"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -3256,7 +3256,7 @@
 				(at 20.32 -2.54 180)
 				(length 5.08)
 				(hide yes)
-				(name "GND_2"
+				(name "GND"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -3275,7 +3275,7 @@
 				(at 20.32 -2.54 180)
 				(length 5.08)
 				(hide yes)
-				(name "GND_2"
+				(name "GND"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -4499,6 +4499,194 @@
 					)
 				)
 				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "UCC27517DBVR"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "U"
+			(at 5.08 6.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "UCC27517DBVR"
+			(at 8.89 -6.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+			(at 0 -12.065 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/ucc27511a.pdf"
+			(at 0 19.05 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Single-Channel High-Speed Low-Side Gate Driver With 4-A Peak Source and 8-A Peak Sink, SOT-23-6"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "single channel low side gate drive dual input split output"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "SOT?23*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "UCC27517DBVR_0_1"
+			(rectangle
+				(start -7.62 5.08)
+				(end 7.62 -5.08)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "UCC27517DBVR_1_1"
+			(pin power_in line
+				(at 0 7.62 270)
+				(length 2.54)
+				(name "V_{DD}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 -7.62 90)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -10.16 2.54 0)
+				(length 2.54)
+				(name "IN+"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -10.16 -2.54 0)
+				(length 2.54)
+				(name "IN-"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 10.16 0 180)
+				(length 2.54)
+				(name "OUT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
 					(effects
 						(font
 							(size 1.27 1.27)

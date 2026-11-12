@@ -2982,7 +2982,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_PH_B4B-PH-K_1x04_P2.00mm_Vertical"
+		(property "Footprint" "CustomFootprints:WAGO-250-104"
 			(at 224.79 38.1 0)
 			(hide yes)
 			(show_name no)
@@ -3506,7 +3506,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_PH_B4B-PH-K_1x04_P2.00mm_Vertical"
+		(property "Footprint" "CustomFootprints:WAGO-250-104"
 			(at 248.92 58.42 0)
 			(hide yes)
 			(show_name no)
