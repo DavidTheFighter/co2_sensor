@@ -1221,6 +1221,16 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "Battery is max 20V because Vgs is -20V"
+		(exclude_from_sim no)
+		(at 132.588 86.868 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "e173d239-ea51-4108-9d76-deaa5326619f")
+	)
 	(junction
 		(at 156.21 69.85)
 		(diameter 0)

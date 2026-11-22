@@ -3283,6 +3283,16 @@
 	)
 	(wire
 		(pts
+			(xy 161.29 73.66) (xy 171.45 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0b280247-1952-4cfc-8b0f-d632c88a6727")
+	)
+	(wire
+		(pts
 			(xy 214.63 39.37) (xy 214.63 41.91)
 		)
 		(stroke
@@ -3480,16 +3490,6 @@
 			(type default)
 		)
 		(uuid "29fb745a-f5ba-43e9-b660-ac06f18dca06")
-	)
-	(wire
-		(pts
-			(xy 161.29 73.66) (xy 199.39 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2a8cf505-db01-49b4-b9e0-baf6be2ddbc4")
 	)
 	(wire
 		(pts
@@ -4163,6 +4163,16 @@
 	)
 	(wire
 		(pts
+			(xy 176.53 73.66) (xy 199.39 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae135ecb-718f-4c2b-b13d-fec147746c6c")
+	)
+	(wire
+		(pts
 			(xy 139.7 125.73) (xy 162.56 125.73)
 		)
 		(stroke
@@ -4190,6 +4200,16 @@
 			(type default)
 		)
 		(uuid "b58e9568-4e46-4482-a4d1-c44f1a0691eb")
+	)
+	(wire
+		(pts
+			(xy 134.62 63.5) (xy 134.62 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b5a568c6-3cb0-4ee4-89b3-c39e587ecb41")
 	)
 	(wire
 		(pts
@@ -4310,16 +4330,6 @@
 			(type default)
 		)
 		(uuid "d31f2cf7-1b8f-4622-bd15-482255c9689f")
-	)
-	(wire
-		(pts
-			(xy 134.62 63.5) (xy 134.62 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d35d1826-776f-4e18-ad9f-b5e28cf41dcb")
 	)
 	(wire
 		(pts
@@ -4453,6 +4463,16 @@
 	)
 	(wire
 		(pts
+			(xy 139.7 123.19) (xy 140.97 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e7dffdc8-c652-4a20-b120-36c9c75c9471")
+	)
+	(wire
+		(pts
 			(xy 195.58 68.58) (xy 199.39 68.58)
 		)
 		(stroke
@@ -4571,6 +4591,26 @@
 		)
 		(uuid "fd9ca62e-c4b9-44bb-afa7-e3f02498e7e1")
 	)
+	(label "BOOST"
+		(at 140.97 120.65 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "11f35888-105e-4cdf-bb46-5f137120e716")
+	)
+	(label "SW"
+		(at 140.97 115.57 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "14f5ba1e-e706-43a0-a57e-952360830975")
+	)
 	(label "LDO_P3V3"
 		(at 115.57 55.88 180)
 		(effects
@@ -4592,7 +4632,7 @@
 		(uuid "535a6aca-0ef1-4b73-94c9-8378dea46f6f")
 	)
 	(label "SENSE"
-		(at 139.7 123.19 0)
+		(at 140.97 123.19 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5402,6 +5442,96 @@
 			(project "co2_hub"
 				(path "/032ed60e-c83d-45fe-8a79-75f890542253/55604b26-7348-434c-95eb-869461d7d070"
 					(reference "R10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 134.62 60.96 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "6282d8d0-8147-4f2c-af5d-a8b08a2a189d")
+		(property "Reference" "R13"
+			(at 132.842 58.42 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Value" "10K"
+			(at 137.16 58.42 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 134.62 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 134.62 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 134.62 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C25744"
+			(at 134.62 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f1a33680-255f-4225-9441-4df801c392ec")
+		)
+		(pin "2"
+			(uuid "86d51583-8ac8-4ffb-9cf5-307dd0e5d51d")
+		)
+		(instances
+			(project "co2_hub"
+				(path "/032ed60e-c83d-45fe-8a79-75f890542253/55604b26-7348-434c-95eb-869461d7d070"
+					(reference "R13")
 					(unit 1)
 				)
 			)
@@ -7138,8 +7268,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 134.62 60.96 0)
-		(mirror y)
+		(at 173.99 73.66 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7147,31 +7276,30 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "e10f3e51-3a5c-42f1-9008-79fd616149a9")
-		(property "Reference" "R13"
-			(at 137.16 59.6899 0)
+		(fields_autoplaced yes)
+		(uuid "dce51a3e-a714-4d3d-9ef0-a338b9666ab4")
+		(property "Reference" "R23"
+			(at 173.99 68.58 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.016 1.016)
 				)
-				(justify right)
 			)
 		)
-		(property "Value" "10K"
-			(at 137.16 62.2299 0)
+		(property "Value" "2.7K"
+			(at 173.99 71.12 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
-		(property "Footprint" ""
-			(at 134.62 60.96 0)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 173.99 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7182,7 +7310,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 134.62 60.96 0)
+			(at 173.99 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7193,7 +7321,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 134.62 60.96 0)
+			(at 173.99 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7203,16 +7331,27 @@
 				)
 			)
 		)
-		(pin "1"
-			(uuid "15cd3cbd-d7ef-4557-97e1-886befd12059")
+		(property "LCSC" "C13167"
+			(at 173.99 73.66 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
 		)
 		(pin "2"
-			(uuid "7b1faeab-edd4-410e-8e8a-683483373ea2")
+			(uuid "671fbe2a-e56d-4faf-8344-f646a2181614")
+		)
+		(pin "1"
+			(uuid "4291f87e-4035-4d9d-a41c-7e68d21ad3d6")
 		)
 		(instances
 			(project "co2_hub"
 				(path "/032ed60e-c83d-45fe-8a79-75f890542253/55604b26-7348-434c-95eb-869461d7d070"
-					(reference "R13")
+					(reference "R23")
 					(unit 1)
 				)
 			)

@@ -8006,7 +8006,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "150K"
+		(property "Value" "50K"
 			(at 157.48 34.2899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8050,7 +8050,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C25811"
+		(property "LCSC" "C25794"
 			(at 154.94 33.02 0)
 			(hide yes)
 			(show_name no)
@@ -8108,7 +8108,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_JAE:JAE_SIM_Card_SF72S006"
+		(property "Footprint" "CustomFootprints:XUNPU Nano-SIM Push-Push With Card Detect"
 			(at 36.83 166.37 0)
 			(hide yes)
 			(show_name no)
@@ -8272,7 +8272,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "b99941fa-19d9-4752-b35b-34092a47ad99")
+		(uuid "9af41abf-e924-41ec-ab73-b93ffe41d6fe")
 		(property "Reference" "R25"
 			(at 104.14 44.4499 0)
 			(show_name no)
@@ -8284,7 +8284,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "150K"
+		(property "Value" "50K"
 			(at 104.14 46.9899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8328,7 +8328,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C25811"
+		(property "LCSC" "C25794"
 			(at 101.6 45.72 0)
 			(hide yes)
 			(show_name no)
@@ -8340,10 +8340,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "888bbec3-9b94-4acf-9425-1f0c01137139")
+			(uuid "71699593-a2e7-4797-a140-6d66e51a7643")
 		)
 		(pin "2"
-			(uuid "aa9ac839-81e1-4ab2-a2a7-f6721ab168bb")
+			(uuid "5bfaa675-e870-483c-bf47-f54444914607")
 		)
 		(instances
 			(project "co2_hub"
