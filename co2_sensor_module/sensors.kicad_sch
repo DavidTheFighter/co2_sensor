@@ -899,7 +899,7 @@
 				)
 			)
 			(property "Description" "Unpolarized capacitor, small symbol"
-				(at 0 0 0)
+				(at 0 -10.16 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -949,7 +949,7 @@
 						(xy -1.524 -0.508) (xy 1.524 -0.508)
 					)
 					(stroke
-						(width 0.3302)
+						(width 0.3048)
 						(type default)
 					)
 					(fill
@@ -1594,7 +1594,7 @@
 		)
 		(uuid "58da588a-6ac9-40cc-a14a-03f4f214e758")
 	)
-	(text "CSB in I2C defines\nthe I2C address\nLOW = 1110110"
+	(text "CSB in I2C defines\nthe I2C address\nLOW = 1110111"
 		(exclude_from_sim no)
 		(at 96.012 62.23 0)
 		(effects
@@ -3628,7 +3628,7 @@
 				)
 			)
 		)
-		(property "Footprint" "CustomFootprints:XDCR_SGP41-D-R4"
+		(property "Footprint" "SGP41-D-R4:XDCR_SGP41-D-R4"
 			(at 198.12 39.37 0)
 			(hide yes)
 			(show_name no)

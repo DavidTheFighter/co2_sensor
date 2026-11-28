@@ -63,7 +63,7 @@
 				)
 			)
 			(property "Description" "Unpolarized capacitor, small symbol"
-				(at 0 0 0)
+				(at 0 -10.16 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -113,7 +113,7 @@
 						(xy -1.524 -0.508) (xy 1.524 -0.508)
 					)
 					(stroke
-						(width 0.3302)
+						(width 0.3048)
 						(type default)
 					)
 					(fill
@@ -753,6 +753,12 @@
 		(uuid "0ad846c2-e128-4d82-a908-9ccfc99c62bd")
 	)
 	(junction
+		(at 58.42 66.04)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0dc43bd4-4661-4302-8567-5845ef3d5e33")
+	)
+	(junction
 		(at 85.09 66.04)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -880,6 +886,26 @@
 	)
 	(wire
 		(pts
+			(xy 58.42 63.5) (xy 58.42 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3ed89ec7-b03e-4104-b4bc-a7655adfd34b")
+	)
+	(wire
+		(pts
+			(xy 58.42 66.04) (xy 85.09 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4351033c-deb8-44e4-9056-1db46e04d50f")
+	)
+	(wire
+		(pts
 			(xy 115.57 41.91) (xy 162.56 41.91)
 		)
 		(stroke
@@ -950,7 +976,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 66.04) (xy 85.09 66.04)
+			(xy 36.83 66.04) (xy 58.42 66.04)
 		)
 		(stroke
 			(width 0)
@@ -1080,6 +1106,16 @@
 	)
 	(wire
 		(pts
+			(xy 58.42 54.61) (xy 58.42 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dd06b81c-5d7f-4873-b147-3dfb9c6bb503")
+	)
+	(wire
+		(pts
 			(xy 35.56 39.37) (xy 36.83 39.37)
 		)
 		(stroke
@@ -1185,6 +1221,99 @@
 			(justify right)
 		)
 		(uuid "f8473fdc-b8e6-4fb5-8d79-3bfcfc517f9c")
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 58.42 60.96 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4fdd5e72-fd81-426a-98c5-0afcac221681")
+		(property "Reference" "C32"
+			(at 60.96 59.6962 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uF"
+			(at 60.96 62.2362 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 58.42 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 58.42 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 58.42 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C15849"
+			(at 58.42 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "1c6606b9-e3e8-4bca-b48f-7447a24b0f51")
+		)
+		(pin "1"
+			(uuid "4e8e6c52-dcbd-4084-afff-76793e494fa8")
+		)
+		(instances
+			(project "co2_sensor_module"
+				(path "/58639344-3050-41c9-a876-6afa82650aa6/09182300-fe81-492b-bad5-b0cc5b7b219c"
+					(reference "C32")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Device:C_Small")

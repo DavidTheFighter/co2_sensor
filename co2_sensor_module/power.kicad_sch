@@ -5,474 +5,6 @@
 	(uuid "f81746ae-33ea-484d-8b92-842c89a0cfcc")
 	(paper "A4")
 	(lib_symbols
-		(symbol "C_Small_1"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.254)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "C"
-				(at 0.254 1.778 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "C_Small"
-				(at 0.254 -2.032 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Unpolarized capacitor, small symbol"
-				(at 0 -10.16 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "capacitor cap"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "C_*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "C_Small_1_0_1"
-				(polyline
-					(pts
-						(xy -1.524 0.508) (xy 1.524 0.508)
-					)
-					(stroke
-						(width 0.3048)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.524 -0.508) (xy 1.524 -0.508)
-					)
-					(stroke
-						(width 0.3048)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "C_Small_1_1_1"
-				(pin passive line
-					(at 0 2.54 270)
-					(length 2.032)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -2.54 90)
-					(length 2.032)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "C_Small_2"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.254)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "C"
-				(at 0.254 1.778 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "C_Small"
-				(at 0.254 -2.032 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Unpolarized capacitor, small symbol"
-				(at 0 -10.16 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "capacitor cap"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "C_*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "C_Small_2_0_1"
-				(polyline
-					(pts
-						(xy -1.524 0.508) (xy 1.524 0.508)
-					)
-					(stroke
-						(width 0.3048)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.524 -0.508) (xy 1.524 -0.508)
-					)
-					(stroke
-						(width 0.3048)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "C_Small_2_1_1"
-				(pin passive line
-					(at 0 2.54 270)
-					(length 2.032)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -2.54 90)
-					(length 2.032)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "C_Small_3"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.254)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "C"
-				(at 0.254 1.778 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "C_Small"
-				(at 0.254 -2.032 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Unpolarized capacitor, small symbol"
-				(at 0 -10.16 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "capacitor cap"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "C_*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "C_Small_3_0_1"
-				(polyline
-					(pts
-						(xy -1.524 0.508) (xy 1.524 0.508)
-					)
-					(stroke
-						(width 0.3048)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.524 -0.508) (xy 1.524 -0.508)
-					)
-					(stroke
-						(width 0.3048)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "C_Small_3_1_1"
-				(pin passive line
-					(at 0 2.54 270)
-					(length 2.032)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -2.54 90)
-					(length 2.032)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "CustomSymbols:LMR36006xxxxx"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -3246,7 +2778,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 246.38 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -3398,7 +2930,6 @@
 		)
 	)
 	(symbol
-		(lib_name "C_Small_2")
 		(lib_id "Device:C_Small")
 		(at 33.02 58.42 0)
 		(mirror y)
@@ -3523,7 +3054,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SON:Texas_DSG0008A_WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm"
+		(property "Footprint" "Package_SON:Texas_DSG0008A_WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm_ThermalVias"
 			(at 201.93 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -3626,7 +3157,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "43.2K"
+		(property "Value" "24.9K"
 			(at 107.696 67.564 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3670,7 +3201,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2906870"
+		(property "LCSC" "C138027"
 			(at 106.68 64.77 0)
 			(hide yes)
 			(show_name no)
@@ -3770,6 +3301,133 @@
 			(project "co2_sensor_module"
 				(path "/58639344-3050-41c9-a876-6afa82650aa6/082dc25c-1e5d-4a89-89cd-8615998cd88a"
 					(reference "#FLG01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "CustomSymbols:LMR36006xxxxx")
+		(at 73.66 53.34 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5d948573-3a8b-4701-8b35-ec5ac47aa5bf")
+		(property "Reference" "U12"
+			(at 73.66 44.45 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LMR36006xxxxx"
+			(at 73.66 46.99 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "CustomFootprints:LMR36006xxxxx"
+			(at 57.404 87.122 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/lmr36006.pdf"
+			(at 73.66 82.804 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "LMR36006 4.2-V to 60-V, 0.6-A Ultra-Small Synchronous Step-Down Converter"
+			(at 73.914 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C2862581"
+			(at 73.66 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Note" "Full MFR# is LMR36006FSCQRNXTQ1, this is the 2.1MHz version"
+			(at 73.66 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "[1,11]"
+			(uuid "148e1885-44e9-4142-b7cc-53f692734604")
+		)
+		(pin "8"
+			(uuid "50cc2e83-f424-420a-92d6-362a3a9bb491")
+		)
+		(pin "7"
+			(uuid "34335504-2389-4470-8a8c-03a804ecfed6")
+		)
+		(pin "6"
+			(uuid "e74b2240-8afd-41ca-b042-a2132e3c30e0")
+		)
+		(pin "5"
+			(uuid "396fba23-dbfb-4a05-9ea8-3492b9d54bc3")
+		)
+		(pin "4"
+			(uuid "4915f6dd-65e6-4c73-bb46-d7281bec9352")
+		)
+		(pin "[2,10]"
+			(uuid "3c38a9f9-bf56-4815-a4c8-89129f934b88")
+		)
+		(pin "3"
+			(uuid "7837358d-fa89-4359-b2f7-9b61d88921be")
+		)
+		(pin "12"
+			(uuid "078d621f-165c-4559-bd3a-b51ada142674")
+		)
+		(pin "9"
+			(uuid "855f7cb3-275a-41ff-aab3-2f6d7b5fd14e")
+		)
+		(instances
+			(project "co2_sensor_module"
+				(path "/58639344-3050-41c9-a876-6afa82650aa6/082dc25c-1e5d-4a89-89cd-8615998cd88a"
+					(reference "U12")
 					(unit 1)
 				)
 			)
@@ -4397,122 +4055,6 @@
 		)
 	)
 	(symbol
-		(lib_id "CustomSymbols:LMR36006xxxxx")
-		(at 73.66 53.34 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8d04176b-e198-4e2d-b5fb-342a3472f58f")
-		(property "Reference" "U12"
-			(at 73.66 44.45 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LMR36006xxxxx"
-			(at 73.66 46.99 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "CustomFootprints:LMR36006xxxxx"
-			(at 57.404 87.122 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/lmr36006.pdf"
-			(at 73.66 82.804 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "LMR36006 4.2-V to 60-V, 0.6-A Ultra-Small Synchronous Step-Down Converter"
-			(at 73.914 35.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C1850367"
-			(at 73.66 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "[1,11]"
-			(uuid "21073d51-0d3e-47bf-827e-c51934e01930")
-		)
-		(pin "8"
-			(uuid "0b89b751-387a-48e4-a0cf-acf4698649a3")
-		)
-		(pin "7"
-			(uuid "589eae0c-27fc-4196-a015-0aaf9ca42775")
-		)
-		(pin "6"
-			(uuid "07d20cc1-f0c9-4588-8e10-6a6403cb4e92")
-		)
-		(pin "5"
-			(uuid "3e379b97-4df9-45eb-b274-90c73fdfc5bf")
-		)
-		(pin "4"
-			(uuid "eece5aee-bcdb-4898-9af8-e70be5d147a9")
-		)
-		(pin "[2,10]"
-			(uuid "67c91e48-b1af-4fc6-90fa-43766d457265")
-		)
-		(pin "3"
-			(uuid "213d982b-20cf-4245-8adb-6389adf78169")
-		)
-		(pin "12"
-			(uuid "ccda4f6b-172f-4624-a942-fc606dc377ac")
-		)
-		(pin "9"
-			(uuid "2c2e70e3-9426-4f71-9017-0297483d2f20")
-		)
-		(instances
-			(project "co2_sensor_module"
-				(path "/58639344-3050-41c9-a876-6afa82650aa6/082dc25c-1e5d-4a89-89cd-8615998cd88a"
-					(reference "U12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:L_Small")
 		(at 101.6 52.07 90)
 		(unit 1)
@@ -4604,7 +4146,6 @@
 		)
 	)
 	(symbol
-		(lib_name "C_Small_3")
 		(lib_id "Device:C_Small")
 		(at 114.3 57.15 0)
 		(unit 1)
@@ -4697,7 +4238,6 @@
 		)
 	)
 	(symbol
-		(lib_name "C_Small_2")
 		(lib_id "Device:C_Small")
 		(at 50.8 58.42 0)
 		(mirror y)
@@ -4961,7 +4501,6 @@
 		)
 	)
 	(symbol
-		(lib_name "C_Small_2")
 		(lib_id "Device:C_Small")
 		(at 41.91 58.42 0)
 		(mirror y)
@@ -5584,7 +5123,6 @@
 		)
 	)
 	(symbol
-		(lib_name "C_Small_1")
 		(lib_id "Device:C_Small")
 		(at 165.1 64.77 0)
 		(unit 1)

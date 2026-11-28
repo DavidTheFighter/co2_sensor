@@ -783,6 +783,12 @@
 		(uuid "c5b491a3-f63e-4e76-839a-aabc7b1520ea")
 	)
 	(junction
+		(at 91.44 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e82e16d5-aeae-4c0a-bd64-4ab6150c4a9d")
+	)
+	(junction
 		(at 148.59 64.77)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -850,6 +856,16 @@
 	)
 	(wire
 		(pts
+			(xy 91.44 87.63) (xy 91.44 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2efe22ef-946e-4ca3-8d58-9dc5bee4347f")
+	)
+	(wire
+		(pts
 			(xy 142.24 67.31) (xy 189.23 67.31)
 		)
 		(stroke
@@ -910,7 +926,7 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 88.9) (xy 118.11 88.9)
+			(xy 69.85 88.9) (xy 91.44 88.9)
 		)
 		(stroke
 			(width 0)
@@ -1040,6 +1056,16 @@
 	)
 	(wire
 		(pts
+			(xy 91.44 77.47) (xy 91.44 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "db8e8587-6897-48ee-abef-01d8b6543699")
+	)
+	(wire
+		(pts
 			(xy 189.23 78.74) (xy 186.69 78.74)
 		)
 		(stroke
@@ -1097,6 +1123,16 @@
 			(type default)
 		)
 		(uuid "f951d8ab-c829-4466-9c45-dabd6b822f57")
+	)
+	(wire
+		(pts
+			(xy 91.44 88.9) (xy 118.11 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fee36549-1dbe-460d-b23b-9ae07f20c6b3")
 	)
 	(hierarchical_label "CANL"
 		(shape bidirectional)
@@ -1721,6 +1757,99 @@
 			(project "co2_hub"
 				(path "/032ed60e-c83d-45fe-8a79-75f890542253/d78b6e39-2275-4a45-8587-f5e83ecc40b8"
 					(reference "C39")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 91.44 85.09 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a5223258-2cf1-4203-bf06-f913bd12e9e7")
+		(property "Reference" "C55"
+			(at 93.98 83.8262 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 93.98 86.3662 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 91.44 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 91.44 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 91.44 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C1525"
+			(at 91.44 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a889efc4-2beb-4e3f-963d-ca5edf97e5d3")
+		)
+		(pin "2"
+			(uuid "c1c7db77-077b-4f11-862e-567f30e990d6")
+		)
+		(instances
+			(project "co2_hub"
+				(path "/032ed60e-c83d-45fe-8a79-75f890542253/d78b6e39-2275-4a45-8587-f5e83ecc40b8"
+					(reference "C55")
 					(unit 1)
 				)
 			)

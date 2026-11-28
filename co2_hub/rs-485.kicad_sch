@@ -5,6 +5,162 @@
 	(uuid "d421d37a-02bd-4b6b-88fe-b2ffea10373f")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Device:C_Small"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0.254 1.778 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C_Small"
+				(at 0.254 -2.032 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Unpolarized capacitor, small symbol"
+				(at 0 -10.16 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "capacitor cap"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "C_Small_0_1"
+				(polyline
+					(pts
+						(xy -1.524 0.508) (xy 1.524 0.508)
+					)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 -0.508) (xy 1.524 -0.508)
+					)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_Small_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 2.032)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 2.032)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:R_Small"
 			(pin_numbers
 				(hide yes)
@@ -146,24 +302,23 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Interface_UART:SP3485EN"
+		(symbol "Interface_UART:THVD1450DR"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "U"
-				(at -7.62 13.97 0)
+				(at -6.985 13.97 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
-			(property "Value" "SP3485EN"
+			(property "Value" "THVD1450DR"
 				(at 1.905 13.97 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -174,19 +329,40 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-				(at 26.67 -8.89 0)
+			(property "Footprint" "Package_SON:VSON-8-1EP_3x3mm_P0.65mm_EP1.6x2.4mm"
+				(at 0 -30.48 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
-						(italic yes)
 					)
 				)
 			)
-			(property "Datasheet" "http://www.icbase.com/pdf/SPX/SPX00480106.pdf"
+			(property "Datasheet" "https://www.ti.com/lit/ds/symlink/thvd1450.pdf"
+				(at 0 -33.02 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "3.3-V to 5-V RS-485 transceiver with ±18-kV IEC ESD protection, VSON-8"
+				(at 0 -27.94 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "Texas Instruments"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -197,7 +373,7 @@
 					)
 				)
 			)
-			(property "Description" "Industrial 3.3V Low Power Half-Duplex RS-485 Transceiver 10Mbps, SOIC-8"
+			(property "ki_keywords" "tranceiver rs485 esd"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -208,7 +384,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "Low Power Half-Duplex RS-485 Transceiver 10Mbps"
+			(property "ki_fp_filters" "*VSON*3x3mm*P0.65mm*EP1.6x2.4mm*"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -219,18 +395,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "SOIC*3.9x4.9mm*P1.27mm*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "SP3485EN_0_1"
+			(symbol "THVD1450DR_0_1"
 				(rectangle
 					(start -7.62 12.7)
 					(end 7.62 -12.7)
@@ -397,7 +562,7 @@
 					)
 				)
 			)
-			(symbol "SP3485EN_1_1"
+			(symbol "THVD1450DR_1_1"
 				(circle
 					(center -0.762 2.54)
 					(radius 0.508)
@@ -1021,10 +1186,10 @@
 		)
 	)
 	(junction
-		(at 179.07 76.2)
+		(at 177.8 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "3a8e1e88-b4df-4f06-bddc-ffc76629b7c4")
+		(uuid "0d1a2719-0510-417e-930a-ff5eb356ab2e")
 	)
 	(junction
 		(at 156.21 60.96)
@@ -1033,26 +1198,52 @@
 		(uuid "3d967303-4cbe-4811-a2ae-013f0758864a")
 	)
 	(junction
-		(at 143.51 52.07)
+		(at 143.51 43.18)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "715385be-aebc-40a1-bd3d-0cb422d2a773")
 	)
 	(junction
-		(at 179.07 71.12)
+		(at 156.21 54.61)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "936643b6-94b0-485c-ba64-98c5a98077f3")
+		(uuid "a11d255b-c3f5-4c9c-9b50-cde280e55c2a")
 	)
 	(junction
-		(at 156.21 40.64)
+		(at 177.8 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bfb77810-7fb9-4a54-a08d-daf74e153d16")
+	)
+	(junction
+		(at 156.21 31.75)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d8223904-2697-4ece-955a-215a30c6bf44")
 	)
 	(wire
 		(pts
-			(xy 143.51 52.07) (xy 148.59 52.07)
+			(xy 177.8 68.58) (xy 194.31 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "03c3fed8-2ed8-49d8-9d87-eded982c1854")
+	)
+	(wire
+		(pts
+			(xy 166.37 71.12) (xy 171.45 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "08afb3f0-7d4a-4304-ac54-e670e554edae")
+	)
+	(wire
+		(pts
+			(xy 143.51 43.18) (xy 148.59 43.18)
 		)
 		(stroke
 			(width 0)
@@ -1062,7 +1253,17 @@
 	)
 	(wire
 		(pts
-			(xy 156.21 40.64) (xy 156.21 46.99)
+			(xy 156.21 54.61) (xy 156.21 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1eeaba63-8432-44da-b2cd-3a0c5d5d8686")
+	)
+	(wire
+		(pts
+			(xy 156.21 31.75) (xy 156.21 38.1)
 		)
 		(stroke
 			(width 0)
@@ -1072,7 +1273,7 @@
 	)
 	(wire
 		(pts
-			(xy 156.21 35.56) (xy 156.21 40.64)
+			(xy 156.21 26.67) (xy 156.21 31.75)
 		)
 		(stroke
 			(width 0)
@@ -1082,7 +1283,7 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 40.64) (xy 156.21 40.64)
+			(xy 143.51 31.75) (xy 156.21 31.75)
 		)
 		(stroke
 			(width 0)
@@ -1092,7 +1293,17 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 52.07) (xy 143.51 48.26)
+			(xy 171.45 68.58) (xy 177.8 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3d025a96-cb58-48ad-aa07-17a2c33b32c9")
+	)
+	(wire
+		(pts
+			(xy 143.51 43.18) (xy 143.51 39.37)
 		)
 		(stroke
 			(width 0)
@@ -1102,7 +1313,7 @@
 	)
 	(wire
 		(pts
-			(xy 156.21 57.15) (xy 156.21 60.96)
+			(xy 156.21 48.26) (xy 156.21 54.61)
 		)
 		(stroke
 			(width 0)
@@ -1112,17 +1323,17 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 71.12) (xy 179.07 71.12)
+			(xy 177.8 78.74) (xy 171.45 78.74)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "69d39561-8b0e-4261-a36d-8ee7e3f2b510")
+		(uuid "6c45a859-5d3f-4f90-9f0d-88c0df8f8c1b")
 	)
 	(wire
 		(pts
-			(xy 153.67 35.56) (xy 156.21 35.56)
+			(xy 153.67 26.67) (xy 156.21 26.67)
 		)
 		(stroke
 			(width 0)
@@ -1132,17 +1343,7 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 71.12) (xy 190.5 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "711f90e1-7754-44a3-b0a3-69cdf5a7f511")
-	)
-	(wire
-		(pts
-			(xy 143.51 43.18) (xy 143.51 40.64)
+			(xy 143.51 34.29) (xy 143.51 31.75)
 		)
 		(stroke
 			(width 0)
@@ -1152,23 +1353,33 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 76.2) (xy 190.5 76.2)
+			(xy 151.13 54.61) (xy 156.21 54.61)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "798e203b-3376-4cb2-b995-7cbf044fe9eb")
+		(uuid "a14c0b94-33a9-4402-b727-f2f7be693865")
 	)
 	(wire
 		(pts
-			(xy 166.37 76.2) (xy 179.07 76.2)
+			(xy 171.45 71.12) (xy 171.45 68.58)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "79931532-cd91-4807-ac6d-c08c9fbf1437")
+		(uuid "a23daee3-e8b6-4ffc-a1a4-7e32cf410e3e")
+	)
+	(wire
+		(pts
+			(xy 171.45 76.2) (xy 166.37 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b63d7074-b2c9-4afc-b630-74acd0da67f2")
 	)
 	(wire
 		(pts
@@ -1182,13 +1393,63 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 52.07) (xy 143.51 52.07)
+			(xy 146.05 54.61) (xy 143.51 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d8b6fb38-70b2-4655-a260-a3097818e892")
+	)
+	(wire
+		(pts
+			(xy 139.7 43.18) (xy 143.51 43.18)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "da90b07d-6062-4657-a7fe-d8ee71f3f154")
+	)
+	(wire
+		(pts
+			(xy 177.8 76.2) (xy 177.8 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dcef2452-ea4c-4f93-93e8-cd807f5b699b")
+	)
+	(wire
+		(pts
+			(xy 177.8 78.74) (xy 194.31 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f1be224e-e07c-4bc0-823d-c313dea5ce62")
+	)
+	(wire
+		(pts
+			(xy 171.45 78.74) (xy 171.45 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fc6bcc23-e7b9-45d3-9fd0-4e5459d66960")
+	)
+	(wire
+		(pts
+			(xy 177.8 68.58) (xy 177.8 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff61049a-228b-4600-871f-001b0e89aa21")
 	)
 	(hierarchical_label "~{nRS485_RE}"
 		(shape input)
@@ -1203,7 +1464,7 @@
 	)
 	(hierarchical_label "RS485_A"
 		(shape bidirectional)
-		(at 190.5 71.12 0)
+		(at 194.31 68.58 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1214,7 +1475,7 @@
 	)
 	(hierarchical_label "RS485_B"
 		(shape bidirectional)
-		(at 190.5 76.2 0)
+		(at 194.31 78.74 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1247,7 +1508,7 @@
 	)
 	(hierarchical_label "P3V3"
 		(shape input)
-		(at 153.67 35.56 180)
+		(at 153.67 26.67 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1258,7 +1519,7 @@
 	)
 	(hierarchical_label "~{nRS485_EN}"
 		(shape input)
-		(at 139.7 52.07 180)
+		(at 139.7 43.18 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1266,6 +1527,17 @@
 			(justify right)
 		)
 		(uuid "95c3e784-e898-44d0-a15f-8bd0860bfa8a")
+	)
+	(hierarchical_label "GND"
+		(shape input)
+		(at 143.51 54.61 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c7c9f521-f649-4e5b-a624-c231a474c1cd")
 	)
 	(hierarchical_label "RS485_RX"
 		(shape output)
@@ -1291,7 +1563,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 143.51 45.72 0)
+		(at 143.51 36.83 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1302,7 +1574,7 @@
 		(fields_autoplaced yes)
 		(uuid "2c59701b-e7e7-46aa-a56a-5badf952cb87")
 		(property "Reference" "R33"
-			(at 146.05 44.4499 0)
+			(at 146.05 35.5599 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1313,7 +1585,7 @@
 			)
 		)
 		(property "Value" "50K"
-			(at 146.05 46.9899 0)
+			(at 146.05 38.0999 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1324,7 +1596,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 143.51 45.72 0)
+			(at 143.51 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1335,7 +1607,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 143.51 45.72 0)
+			(at 143.51 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1346,7 +1618,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 143.51 45.72 0)
+			(at 143.51 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1357,7 +1629,7 @@
 			)
 		)
 		(property "LCSC" "C25794"
-			(at 143.51 45.72 0)
+			(at 143.51 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1383,100 +1655,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
-		(at 179.07 73.66 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6137a935-be6e-447c-8554-f44ee472b4ee")
-		(property "Reference" "R34"
-			(at 181.61 72.3899 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "120"
-			(at 181.61 74.9299 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 179.07 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 179.07 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 179.07 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C17437"
-			(at 179.07 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "c0198672-9d7f-48b0-89e4-a445a3ef9482")
-		)
-		(pin "2"
-			(uuid "5b567518-73ea-45d1-8653-f8735186adf0")
-		)
-		(instances
-			(project "co2_hub"
-				(path "/032ed60e-c83d-45fe-8a79-75f890542253/7b099b09-a5ef-4a34-8341-b10878f0a5cf"
-					(reference "R34")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Interface_UART:SP3485EN")
+		(lib_id "Interface_UART:THVD1450DR")
 		(at 156.21 78.74 0)
 		(unit 1)
 		(body_style 1)
@@ -1486,8 +1665,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "6d88a924-c626-495a-8bd4-df9ff83c2bb0")
-		(property "Reference" "U7"
+		(uuid "a4f2cb50-3bda-4dfd-bb5c-12cd3e42d61a")
+		(property "Reference" "U4"
 			(at 158.3533 60.96 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1498,7 +1677,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "SP3485EN"
+		(property "Value" "THVD1450DR"
 			(at 158.3533 63.5 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1509,19 +1688,40 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at 182.88 87.63 0)
+		(property "Footprint" "Package_SON:VSON-8-1EP_3x3mm_P0.65mm_EP1.6x2.4mm"
+			(at 156.21 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
-					(italic yes)
 				)
 			)
 		)
-		(property "Datasheet" "http://www.icbase.com/pdf/SPX/SPX00480106.pdf"
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/thvd1450.pdf"
+			(at 156.21 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "3.3-V to 5-V RS-485 transceiver with ±18-kV IEC ESD protection, VSON-8"
+			(at 156.21 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Texas Instruments"
 			(at 156.21 78.74 0)
 			(hide yes)
 			(show_name no)
@@ -1531,46 +1731,35 @@
 					(size 1.27 1.27)
 				)
 			)
-		)
-		(property "Description" "Industrial 3.3V Low Power Half-Duplex RS-485 Transceiver 10Mbps, SOIC-8"
-			(at 156.21 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "8"
-			(uuid "d91160f6-150f-4eb8-9a90-a2206dbb9623")
-		)
-		(pin "4"
-			(uuid "ad36a839-c8b5-499b-b1b1-ec434f8d7e57")
 		)
 		(pin "3"
-			(uuid "ec2f7d14-8aec-4525-9fa3-4194d8faa251")
-		)
-		(pin "2"
-			(uuid "f1ff928b-82bd-43aa-97c7-67150ba5a7aa")
-		)
-		(pin "5"
-			(uuid "f903b092-3bbe-45cf-8d2a-1a9365282c19")
-		)
-		(pin "6"
-			(uuid "31cbcd58-e29a-4adb-8be4-91ac9a4eb3ed")
-		)
-		(pin "7"
-			(uuid "00b18fba-7c29-40e6-98e0-2695decbcff3")
+			(uuid "d96c2238-6659-447f-a3e6-03fe0dfcd44a")
 		)
 		(pin "1"
-			(uuid "3073bd45-e604-44fb-bb4f-bdc2cbc30cbc")
+			(uuid "f387d956-2bea-400a-b123-8dfcda72564a")
+		)
+		(pin "2"
+			(uuid "a1858648-66ec-492d-ad57-edf837753867")
+		)
+		(pin "4"
+			(uuid "4b1ffeb6-f929-4753-b3f1-b894671b7b03")
+		)
+		(pin "5"
+			(uuid "6141d2ea-4916-4b51-b626-d1b3d2bc9e45")
+		)
+		(pin "6"
+			(uuid "a8ea62fb-9823-4a87-9ad4-4f92fbd44891")
+		)
+		(pin "8"
+			(uuid "c1d6f08a-c81e-4e1f-b1ce-fc374cd27201")
+		)
+		(pin "7"
+			(uuid "364af635-f686-46a6-bdec-a632d673877b")
 		)
 		(instances
 			(project "co2_hub"
 				(path "/032ed60e-c83d-45fe-8a79-75f890542253/7b099b09-a5ef-4a34-8341-b10878f0a5cf"
-					(reference "U7")
+					(reference "U4")
 					(unit 1)
 				)
 			)
@@ -1578,7 +1767,8 @@
 	)
 	(symbol
 		(lib_id "Transistor_FET:AO3401A")
-		(at 153.67 52.07 0)
+		(at 153.67 43.18 0)
+		(mirror x)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1586,10 +1776,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "c0d7c972-e552-4302-b754-37253d38feb8")
 		(property "Reference" "Q4"
-			(at 160.02 50.7999 0)
+			(at 160.02 41.9099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1600,7 +1789,7 @@
 			)
 		)
 		(property "Value" "AO3401A"
-			(at 160.02 53.3399 0)
+			(at 160.02 44.4499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1611,7 +1800,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 158.75 53.975 0)
+			(at 158.75 41.275 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1624,7 +1813,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf"
-			(at 158.75 55.88 0)
+			(at 158.75 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1636,7 +1825,7 @@
 			)
 		)
 		(property "Description" "-4.0A Id, -30V Vds, P-Channel MOSFET, SOT-23"
-			(at 153.67 52.07 0)
+			(at 153.67 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1647,7 +1836,7 @@
 			)
 		)
 		(property "LCSC" "C15127"
-			(at 153.67 52.07 0)
+			(at 153.67 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1749,6 +1938,190 @@
 			(project "co2_hub"
 				(path "/032ed60e-c83d-45fe-8a79-75f890542253/7b099b09-a5ef-4a34-8341-b10878f0a5cf"
 					(reference "#FLG07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 148.59 54.61 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "da9d471f-83ff-4d8b-a2fc-c5f9067c63e9")
+		(property "Reference" "C35"
+			(at 148.59 48.26 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100nF"
+			(at 148.59 50.8 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 148.59 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 148.59 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 148.59 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C1525"
+			(at 148.59 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f11b8fb3-83b5-4f21-9508-0f9707dac7b6")
+		)
+		(pin "2"
+			(uuid "b0e060f6-1f6e-45d1-bca3-d54ebeca5475")
+		)
+		(instances
+			(project "co2_hub"
+				(path "/032ed60e-c83d-45fe-8a79-75f890542253/7b099b09-a5ef-4a34-8341-b10878f0a5cf"
+					(reference "C35")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 177.8 73.66 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "eb680a24-7524-41df-8992-9439148db6e9")
+		(property "Reference" "R5"
+			(at 180.34 72.3899 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "120"
+			(at 180.34 74.9299 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 177.8 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 177.8 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 177.8 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C22787"
+			(at 177.8 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c15eb691-2e82-42e6-a9f6-ff0975dc94c3")
+		)
+		(pin "2"
+			(uuid "ff86bc4e-a233-4e08-a6ac-ff5de2740bf8")
+		)
+		(instances
+			(project "co2_hub"
+				(path "/032ed60e-c83d-45fe-8a79-75f890542253/7b099b09-a5ef-4a34-8341-b10878f0a5cf"
+					(reference "R5")
 					(unit 1)
 				)
 			)
